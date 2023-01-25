@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.advanced.minhas.activity.ReceiptActivity">
+
+
+    <LinearLayout
+        android:id="@+id/view_receipt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:id="@+id/view_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGrayLight"
+
+            android:orientation="vertical"
+            android:padding="@dimen/padding_m"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:background="@drawable/rectangle_bluebackgrnd_box"
+
+                android:layout_marginTop="@dimen/padding_m">
+
+                <!--amount-->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="left|center"
+                    android:textSize="@dimen/text_m"
+                    android:text="Cash"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/colorWhite"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/padding_m"
+                    android:hint="0.00"
+                    android:layout_marginLeft="@dimen/padding_l"
+
+                    />
+
+                <EditText
+                    android:id="@+id/edt_totalamnt"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="left|center"
+
+                    android:textSize="@dimen/text_m"
+                    android:singleLine="true"
+                    android:layout_marginRight="1dp"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/colorWhite"
+                    android:imeOptions="actionDone"
+                    android:padding="@dimen/padding_m"
+
+                    />
+
+
+
+
+
+                <!--amount-->
+                <TextView
+                    android:id="@+id/tv_mode"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="left|center"
+                    android:textSize="@dimen/text_m"
+                    android:text="Mode"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/colorWhite"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/padding_m"
+                    android:hint="0.00"
+                    android:layout_marginLeft="@dimen/padding_l"
+
+                    />
+
+                <android.support.v7.widget.AppCompatSpinner
+
+                    android:id="@+id/spinner_receipt_payment_mode"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:entries="@array/payment_types_array"
+                    android:gravity="center|left"
+                    android:padding="@dimen/padding_m"
+                    android:singleLine="true"
+                    android:spinnerMode="dropdown"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_m"
+                    android:theme="@style/CardView.Dark" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:background="@drawable/rectangle_bluebackgrnd_box"
+                android:layout_marginTop="@dimen/padding_m">
+
+                <!--amount-->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="left|center"
+                    android:textSize="@dimen/text_m"
+                    android:text="Adv. Amt"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/colorWhite"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/padding_m"
+                    android:hint="0.00"
+                    android:layout_marginLeft="@dimen/padding_l"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_advncamnt"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="left|center"
+                    android:textSize="@dimen/text_m"
+                    android:singleLine="true"
+                    android:layout_marginRight="1dp"
+                    android:inputType="text"
+                    android:textColor="@color/colorWhite"
+                    android:imeOptions="actionDone"
+                    android:padding="@dimen/padding_m"
+                    android:hint="Advnc amnt"
+                    android:layout_marginLeft="@dimen/padding_l"
+                    />
+
+
+                <!--amount-->
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="left|center"
+                    android:textSize="@dimen/text_m"
+                    android:text="Total"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/colorWhite"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/padding_m"
+                    android:hint="0.00"
+                    android:layout_marginLeft="@dimen/padding_l"
+
+                    />
+
+                <TextView
+
+                    android:id="@+id/tv_totalamnt"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="left|center"
+                    android:textSize="@dimen/text_m"
+                    android:singleLine="true"
+                    android:layout_marginRight="1dp"
+                    android:inputType="text"
+                    android:textColor="@color/colorWhite"
+                    android:imeOptions="actionDone"
+                    android:padding="@dimen/padding_m"
+                    android:hint="Total"
+                    android:layout_marginLeft="@dimen/padding_l"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:background="@drawable/rectangle_bluebackgrnd_box"
+                android:layout_marginTop="@dimen/padding_m">
+
+                <!--amount-->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="left|center"
+                    android:textSize="@dimen/text_m"
+                    android:text="Balance"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/colorWhite"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/padding_m"
+                    android:hint="0.00"
+                    android:layout_marginLeft="@dimen/padding_l"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_balance"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/text_m"
+                    android:singleLine="true"
+                    android:layout_marginRight="1dp"
+                    android:inputType="text"
+                    android:textColor="@color/colorWhite"
+                    android:imeOptions="actionDone"
+                    android:padding="@dimen/padding_m"
+                    android:hint="Balance"
+                    android:layout_marginLeft="@dimen/padding_l"
+
+                    />
+
+
+
+
+
+                <!--amount-->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="left|center"
+                    android:textSize="@dimen/text_m"
+                    android:text="Ref. No"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/colorWhite"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/padding_m"
+                    android:hint="0.00"
+                    android:layout_marginLeft="@dimen/padding_l"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_referno"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/text_m"
+                    android:singleLine="true"
+                    android:layout_marginRight="1dp"
+                    android:inputType="text"
+                    android:textColor="@color/colorWhite"
+                    android:imeOptions="actionDone"
+                    android:padding="@dimen/padding_m"
+                    android:hint="Refer No"
+
+                    android:layout_marginLeft="@dimen/padding_l"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/view_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_below="@+id/view_top"
+
+            >
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginLeft="@dimen/padding_m"
+                android:layout_marginRight="@dimen/padding_m"
+                android:layout_marginTop="@dimen/padding_m"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:textSize="@dimen/text_l"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:id="@+id/rec_list"
+                />
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:layout_below="@+id/view_top"
+                >
+                <!--sales_return_right_badge-->
+                <com.rey.material.widget.Button
+
+                    android:id="@+id/button_bill_cancel"
+                    style="@style/Material.Drawable.Ripple.Wave"
+                    android:layout_marginStart="@dimen/padding_l"
+                    android:layout_marginEnd="@dimen/padding_xl"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/button_height"
+                    android:background="@drawable/rectangle_blue_box"
+                    android:layout_marginTop="@dimen/padding_m"
+                    android:layout_marginBottom="@dimen/padding_l"
+                    android:layout_gravity="end|center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text_m"
+                    android:paddingLeft="@dimen/button_padding"
+                    android:paddingRight="@dimen/button_padding"
+                    android:text="CANCEL"
+                    app:rd_enable="true"
+                    />
+
+                <com.rey.material.widget.Button
+
+                    android:id="@+id/button_bill_submit"
+                    style="@style/Material.Drawable.Ripple.Wave"
+                    android:layout_marginStart="@dimen/padding_l"
+                    android:layout_marginEnd="@dimen/padding_xl"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/button_height"
+                    android:background="@drawable/rectangle_blue_box"
+                    android:layout_marginTop="@dimen/padding_m"
+                    android:layout_marginBottom="@dimen/padding_l"
+                    android:layout_gravity="end|center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text_m"
+                    android:paddingLeft="@dimen/button_padding"
+                    android:paddingRight="@dimen/button_padding"
+                    android:text="SUBMIT"
+                    app:rd_enable="true"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

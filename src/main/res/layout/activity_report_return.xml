@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activity.report.ReportReturn">
+
+
+    <!--custom toolbar-->
+    <LinearLayout
+        android:id="@+id/view_invoiceReport_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_toolbar_height"
+        android:background="@color/colorPrimary"
+        android:baselineAligned="false"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/toolbar_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/padding_m" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorWhite"
+        >
+
+
+
+        <!--            <SearchView
+                           android:id="@+id/searchView_collectionReport_customer"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_alignParentEnd="true"
+                           android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true"
+                           android:layout_marginEnd="@dimen/padding_xl"
+                           android:layout_marginRight="@dimen/padding_xl"
+                           android:focusable="false"
+                           android:iconifiedByDefault="false"
+                           android:minHeight="@dimen/SearchableSpinner_height"
+                           android:queryHint="Search Customer"
+                           android:theme="@style/SearchViewTheme_light" />-->
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_l">
+
+        <!--Error View with progressbar-->
+        <include
+            android:id="@+id/product_vanStock"
+            layout="@layout/progress_recyclerview" />
+
+        <RelativeLayout
+            android:id="@+id/layout_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!--invoice List-->
+
+            <android.support.v7.widget.RecyclerView
+
+                android:id="@+id/recyclerview_return_report"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:reverseLayout="false"
+                app:stackFromEnd="false"
+                android:layout_marginBottom="5dp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

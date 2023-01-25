@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:baselineAligned="false"
+    tools:context="com.advanced.minhas.activity.HomeActivity">
+
+
+
+    <!--container Layout-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:layout_above="@+id/fragment_dash_board_left">
+
+
+
+            <LinearLayout
+                android:id="@+id/fragment_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                />
+
+        </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:id="@+id/fragment_dash_board_left"
+        android:name="com.icresp.idreesjoma.fragment.HomeDashBoardLeftFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+         />
+
+
+
+</RelativeLayout>

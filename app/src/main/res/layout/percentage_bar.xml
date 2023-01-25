@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/padding_l"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_xxl">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/credit"
+            android:layout_gravity="left|center"
+            android:textSize="@dimen/text_m"
+            android:textColor="@color/grayText"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView_percentageBar_credit"
+            android:layout_gravity="right|center"
+            android:textSize="@dimen/text_m"
+            android:textColor="@color/grayText"/>
+    </FrameLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/view_parent_credit"
+        app:layout_widthPercent="100%"
+        android:layout_width="match_parent"
+        android:background="@drawable/bar_background_blank"
+        android:layout_height="@dimen/percentage_bar_height">
+
+
+        <View android:id="@+id/view_child_credit"
+            android:layout_width="wrap_content"
+            android:background="@drawable/bar_background_fill"/>
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+</LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_l"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_xxl">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/balance"
+                android:layout_gravity="left|center"
+                android:textSize="@dimen/text_m"
+                android:textColor="@color/grayText"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView_percentageBar_balance"
+                android:layout_gravity="right|center"
+                android:textSize="@dimen/text_m"
+                android:textColor="@color/grayText"/>
+        </FrameLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/view_parent_balance"
+            app:layout_widthPercent="100%"
+            android:layout_width="match_parent"
+            android:background="@drawable/bar_background_blank"
+            android:layout_height="@dimen/percentage_bar_height">
+
+
+            <View android:id="@+id/view_child_balance"
+                android:layout_width="wrap_content"
+                android:background="@drawable/bar_background_fill"/>
+
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

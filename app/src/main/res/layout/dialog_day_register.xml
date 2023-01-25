@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:padding="@dimen/padding_l"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/textView_dayRegister_Dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/padding_l"
+            android:paddingEnd="@dimen/padding_l"
+            android:text="Day Register"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_xl"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/padding_xl"
+            android:layout_marginStart="@dimen/padding_xl"/>
+
+
+
+
+        <TextView
+            android:id="@+id/textView_dayRegister_Dialog_executiveName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_m"
+            android:textColor="@color/colorWhite"
+            android:layout_marginStart="@dimen/padding_xl"
+            android:textSize="@dimen/text_l"
+            android:gravity="end"
+            android:layout_gravity="start"
+            android:layout_marginLeft="@dimen/padding_xl"/>
+        <!--
+                <TextView
+                    android:id="@+id/textView_dayRegister_Dialog_old_kilometer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:padding="@dimen/padding_l"
+                    android:text="Old  :"
+                    android:layout_marginEnd="@dimen/padding_xl"
+                    android:textSize="@dimen/text_m"
+                    android:gravity="end"
+                    android:layout_below="@id/textView_dayRegister_Dialog_vehicleNo"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="@dimen/padding_xl"
+                    android:layout_alignParentRight="true" />-->
+        <!--<TextView
+            android:id="@+id/textView_dayRegister_Dialog_date"
+            android:layout_below="@+id/textView_dayRegister_Dialog_executiveName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_m"
+            android:textColor="@color/colorWhite"
+            android:layout_marginStart="@dimen/padding_xl"
+            android:textSize="@dimen/text_m"
+            android:gravity="start"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/textView_dayRegister_Dialog_old_kilometer"
+            android:layout_marginLeft="@dimen/padding_xl"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/textView_dayRegister_Dialog_old_kilometer" />
+
+
+-->
+
+        <TextView
+            android:id="@+id/textView_dayRegister_Dialog_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_m"
+            android:textColor="@color/colorWhite"
+            android:layout_marginStart="@dimen/padding_xl"
+            android:textSize="@dimen/text_m"
+            android:gravity="start"
+            android:layout_marginLeft="@dimen/padding_xl"
+            android:layout_gravity="start"/>
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="Vehicle No * "
+            android:padding="20dp"
+            android:textSize="@dimen/text_m" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/sp_vehicleno"
+            android:padding="@dimen/padding_m"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/rect_text_view_disable"
+            android:gravity="start|center"
+            android:singleLine="true"
+            android:textSize="@dimen/text_m"
+            android:lines="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="Vehicle No "
+            android:textSize="@dimen/text_m"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/tv_vehiclenoadd"
+            android:visibility="gone"
+            />
+
+        <EditText
+            android:visibility="gone"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/edt_vehiclenoadd"
+            android:padding="@dimen/padding_m"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/rect_text_view_disable"
+            android:gravity="start|center"
+            android:singleLine="true"
+            android:textSize="@dimen/text_m"
+            android:lines="1"
+
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="Driver Name * "
+            android:padding="20dp"
+            android:textSize="@dimen/text_m" />
+        <EditText
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/edt_drivername"
+            android:padding="@dimen/padding_m"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/rect_text_view_disable"
+            android:gravity="start|center"
+            android:singleLine="true"
+            android:textSize="@dimen/text_m"
+            android:lines="1"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="start"
+            android:textSize="@dimen/text_l"
+            android:text="You are a on Duty Today?"
+            android:textColor="@color/primaryText"
+            android:padding="@dimen/padding_l"
+            android:layout_marginLeft="@dimen/padding_xxl"
+            android:layout_marginStart="@dimen/padding_xxl"
+            android:layout_marginTop="5dp"/>
+
+
+
+        <RadioGroup
+
+            android:id="@+id/radioGroup_dayRegister_Dialog_dutyType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start"
+            android:layout_marginLeft="@dimen/padding_xxl"
+            android:layout_marginStart="@dimen/padding_xxl">
+
+            <RadioButton
+                android:id="@+id/radioButton_dayRegister_Dialog_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grayText"
+                android:text="Yes, I am In"
+                android:textSize="@dimen/text_m"
+                android:checked="true"
+                />
+
+            <RadioButton
+                android:id="@+id/radioButton_dayRegister_Dialog_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grayText"
+                android:text="No, On Leave"
+                android:textSize="@dimen/text_m"
+                android:layout_marginStart="@dimen/padding_4xxl"
+                android:layout_marginLeft="@dimen/padding_4xxl"/>
+
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/padding_xxl">
+
+
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/padding_l"
+                android:minWidth="@dimen/layout_width"
+                android:layout_gravity="start"
+                android:layout_marginEnd="@dimen/padding_xxl"
+                android:layout_marginRight="@dimen/padding_xxl">
+                <EditText
+                    android:id="@+id/editText_dayRegister_Dialog_kilometer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_l"
+                    android:hint="Enter Vehicle  Kilometer"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/textHint"
+                    android:padding="@dimen/padding_l"
+                    android:background="@drawable/kilometer_input"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="end"
+                android:textSize="@dimen/text_m"
+                android:text="KM"
+                android:textColor="@color/grayText"
+                android:padding="@dimen/padding_l"
+                android:layout_marginStart="@dimen/padding_xxl"
+                android:layout_marginLeft="@dimen/padding_xxl" />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/padding_xxl">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/padding_l"
+                android:minWidth="@dimen/layout_width"
+                android:layout_gravity="start"
+                android:layout_marginEnd="@dimen/padding_xxl"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/padding_xxl">
+                <EditText
+                    android:id="@+id/editText_dayRegister_Dialog_vehicleno"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_l"
+                    android:hint="Enter Vehicle  Number"
+                    android:inputType="text"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/textHint"
+                    android:padding="@dimen/padding_l"
+                    android:background="@drawable/kilometer_input"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="end"
+                android:textSize="@dimen/text_m"
+                android:text="     "
+                android:textColor="@color/grayText"
+                android:padding="@dimen/padding_l"
+                android:layout_marginStart="@dimen/padding_xxl"
+                android:layout_marginLeft="@dimen/padding_xxl" />
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/item_divider_horizontal_dark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:orientation="horizontal"
+        >
+
+        <com.rey.material.widget.Button
+            android:id="@+id/button_dayRegister_Dialog_cancel"
+            style="@style/Material.Drawable.Ripple.Wave"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_toolbar_height"
+            android:background="@color/colorTransparent"
+            android:layout_margin="@dimen/padding_xl"
+            android:layout_gravity="center"
+            android:textColor="@color/grayText"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_l"
+            android:paddingLeft="@dimen/button_padding"
+            android:paddingRight="@dimen/button_padding"
+            android:text="CANCEL"
+            app:rd_enable="true"/>
+
+
+        <com.rey.material.widget.Button
+            android:id="@+id/button_dayRegister_Dialog_ok"
+            style="@style/Material.Drawable.Ripple.Wave"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_toolbar_height"
+            android:background="@color/colorTransparent"
+            android:layout_margin="@dimen/padding_xl"
+            android:layout_gravity="center"
+            android:textColor="@color/grayText"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_l"
+            android:paddingLeft="@dimen/button_padding"
+            android:paddingRight="@dimen/button_padding"
+            android:text="OK"
+            app:rd_enable="true"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

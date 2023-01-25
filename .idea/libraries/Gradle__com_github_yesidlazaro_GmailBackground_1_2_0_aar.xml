@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.yesidlazaro:GmailBackground:1.2.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1e590ac72170f199e370744d5d26cee0/transformed/GmailBackground-1.2.0/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1e590ac72170f199e370744d5d26cee0/transformed/GmailBackground-1.2.0/jars/libs/activation.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1e590ac72170f199e370744d5d26cee0/transformed/GmailBackground-1.2.0/jars/libs/additionnal.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1e590ac72170f199e370744d5d26cee0/transformed/GmailBackground-1.2.0/jars/libs/mail.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1e590ac72170f199e370744d5d26cee0/transformed/GmailBackground-1.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1e590ac72170f199e370744d5d26cee0/transformed/GmailBackground-1.2.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.yesidlazaro/GmailBackground/1.2.0/de8f467207daa2534004c125b0ffea427deaa131/GmailBackground-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

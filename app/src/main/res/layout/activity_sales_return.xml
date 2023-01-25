@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.advanced.minhas.activity.SalesReturnActivity">
+
+
+    <!--head bar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary"
+        android:baselineAligned="false"
+        android:focusableInTouchMode="true"
+        android:minHeight="80dp"
+        android:orientation="horizontal">
+
+        <!--<RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:focusableInTouchMode="true">
+
+
+            &lt;!&ndash;title&ndash;&gt;
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/app_title"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_l" />
+        </RelativeLayout>-->
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/toolbar_container"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/padding_xxl"
+        android:paddingLeft="@dimen/padding_xxl"
+        android:layout_marginTop="-10dp"
+        android:background="@color/colorPrimary"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/textView_sales_return_ShopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_l"
+            android:layout_alignParentStart="true"
+            android:textStyle="normal"
+            android:textColor="@color/grayText"/>
+
+
+        <CheckBox
+            android:id="@+id/checked_textView_sales_return_withoutInvoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/padding_l"
+            android:checked="false"
+            android:text="@string/without_invoice"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_l"
+            android:theme="@style/CheckBoxStyle" />
+
+
+    </RelativeLayout>
+
+
+    <!--Bottom-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/fragment_sales_return_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

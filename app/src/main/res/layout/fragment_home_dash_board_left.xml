@@ -1,0 +1,454 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorGrayDashBoard"
+    android:orientation="vertical"
+    tools:context="com.advanced.minhas.fragment.HomeDashBoardLeftFragment">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:minHeight="35dp"
+        android:background="@color/colorgreylight_bg">
+
+        <TextView
+        android:id="@+id/label_collection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today Collection"
+        android:textColor="@color/colorGrayDashBoard"
+        android:textSize="@dimen/text_m"
+        android:layout_marginStart="@dimen/padding_xl"
+        android:layout_centerVertical="true"
+        android:lines="1"/>
+
+        <TextView
+            android:id="@+id/textView_collection_dash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/label_collection"
+            android:textColor="@color/colorGrayDashBoard"
+            android:textSize="@dimen/text_m"
+            android:lines="1"/>
+        <TextView
+            android:id="@+id/label_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/padding_4xxl"
+            android:layout_toRightOf="@+id/textView_collection_dash"
+            android:lines="1"
+            android:text="Version"
+            android:textColor="@color/colorGrayDashBoard"
+            android:textSize="@dimen/text_m" />
+
+        <TextView
+            android:id="@+id/textView_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/label_version"
+            android:textColor="@color/colorGrayDashBoard"
+            android:textSize="@dimen/text_m"
+            android:lines="1"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today Sales"
+            android:textColor="@color/colorGreen"
+            android:textSize="@dimen/text_s"
+            android:layout_marginStart="@dimen/padding_xl"
+            android:layout_centerVertical="true"
+            android:lines="1"
+            android:layout_marginEnd="@dimen/padding_l"
+            android:layout_toLeftOf="@+id/textView_todaySale_dash"/>
+
+        <TextView
+            android:id="@+id/textView_todaySale_dash"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/padding_l"
+            android:textColor="@color/colorGrayDashBoard"
+            android:textSize="@dimen/text_m"
+            android:lines="1"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorgreylight_bg">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/colorWhite">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Van Stock"
+                android:textColor="@color/colorGrayDashBoard"
+                android:textSize="@dimen/text_s"
+                android:lines="1"/>
+
+            <TextView
+                android:id="@+id/textView_stock_dash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGrayDashBoard"
+                android:textSize="@dimen/text_m"
+                android:lines="1"
+                android:layout_marginTop="@dimen/padding_m"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/colorWhite"
+            android:layout_marginLeft="1dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sale Target"
+                android:textColor="@color/colorGrayDashBoard"
+                android:textSize="@dimen/text_s"
+                android:lines="1"/>
+
+            <TextView
+                android:id="@+id/textView_target_dash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGrayDashBoard"
+                android:textSize="@dimen/text_m"
+                android:lines="1"
+                android:layout_marginTop="@dimen/padding_m"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/colorWhite"
+            android:layout_marginLeft="1dp"
+            android:visibility="gone">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily Bonus"
+                android:textColor="@color/colorGrayDashBoard"
+                android:textSize="@dimen/text_s"
+                android:lines="1"/>
+
+            <TextView
+                android:id="@+id/textView_target_dailybonus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/colorGrayDashBoard"
+                android:textSize="@dimen/text_m"
+                android:layout_marginTop="@dimen/padding_m"
+                android:lines="1"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/colorWhite"
+            android:visibility="gone"
+            android:layout_marginLeft="1dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly Bonus"
+                android:textColor="@color/colorGrayDashBoard"
+                android:textSize="@dimen/text_s"
+                android:lines="1"/>
+
+            <TextView
+                android:id="@+id/textView_monthlybonus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGrayDashBoard"
+                android:textSize="@dimen/text_m"
+                android:layout_marginTop="@dimen/padding_m"
+                android:lines="1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorgreylight_bg"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorWhite"
+        android:gravity="center">
+
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorWhite"
+            android:gravity="center">
+
+        <com.rey.material.widget.Button
+            android:id="@+id/button_search_customer"
+            style="@style/Material.Drawable.Ripple.Wave"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorGrayDark"
+            android:textAllCaps="false"
+            android:text="Customer"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_m"
+            android:textStyle="normal"
+            app:rd_enable="true"
+            android:minWidth="@dimen/dim_buttonwidth"
+            android:drawableTop="@drawable/bottom_icon_search"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="@dimen/padding_m"
+            />
+            <com.rey.material.widget.Button
+                android:id="@+id/button_order_placing"
+                style="@style/Material.Drawable.Ripple.Wave"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorGrayDark"
+                android:textAllCaps="false"
+                android:text="Order Request"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_m"
+                android:textStyle="normal"
+                app:rd_enable="true"
+                android:minWidth="@dimen/dim_buttonwidth"
+                android:drawableTop="@drawable/order_place"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="@dimen/padding_m"
+                />
+        <com.rey.material.widget.Button
+            android:id="@+id/button_createShop"
+            style="@style/Material.Drawable.Ripple.Wave"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorGrayDark"
+            android:textAllCaps="false"
+            android:text="New Shop"
+            android:textSize="@dimen/text_m"
+            android:textStyle="normal"
+            app:rd_enable="true"
+            android:minWidth="@dimen/dim_buttonwidth"
+            android:drawableTop="@drawable/bottom_icon_neshop"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="@dimen/padding_m"
+            />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/button_vanStock"
+            style="@style/Material.Drawable.Ripple.Wave"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorGrayDark"
+            android:textAllCaps="false"
+            android:text="Van Stock"
+            android:textSize="@dimen/text_m"
+            android:textStyle="normal"
+            app:rd_enable="true"
+            android:minWidth="@dimen/dim_buttonwidth"
+            android:drawableTop="@drawable/bottom_icon_van"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="@dimen/padding_m"
+            />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/button_reports"
+            style="@style/Material.Drawable.Ripple.Wave"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorGrayDark"
+            android:textAllCaps="false"
+            android:text="Report"
+            android:textSize="@dimen/text_m"
+            android:minWidth="@dimen/dim_buttonwidth"
+            android:textStyle="normal"
+            app:rd_enable="true"
+            android:drawableTop="@drawable/bottom_icon_report"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="@dimen/padding_m"
+            />
+            <com.rey.material.widget.Button
+                android:id="@+id/button_Stocktransfer"
+                style="@style/Material.Drawable.Ripple.Wave"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorGrayDark"
+                android:textAllCaps="false"
+                android:text="Stock Transfer"
+                android:textSize="@dimen/text_m"
+                android:textStyle="normal"
+                app:rd_enable="true"
+                android:minWidth="@dimen/dim_buttonwidth"
+                android:drawableTop="@drawable/stock_trans"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="@dimen/padding_m"
+                />
+            <com.rey.material.widget.Button
+                android:id="@+id/button_vantowarehouse"
+                style="@style/Material.Drawable.Ripple.Wave"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorGrayDark"
+                android:textAllCaps="false"
+                android:text="Van Transfer"
+                android:textSize="@dimen/text_m"
+                android:textStyle="normal"
+                app:rd_enable="true"
+                android:minWidth="@dimen/dim_buttonwidth"
+                android:drawableTop="@drawable/stock_trans"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="@dimen/padding_m"
+                />
+        <com.rey.material.widget.Button
+            android:id="@+id/button_expense"
+            style="@style/Material.Drawable.Ripple.Wave"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorGrayDark"
+            android:textAllCaps="false"
+            android:text="Expense"
+            android:textSize="@dimen/text_m"
+            android:textStyle="normal"
+            app:rd_enable="true"
+            android:drawableTop="@drawable/ic_reports_grey"
+            android:background="@color/colorWhite"
+
+            />
+
+            <com.rey.material.widget.Button
+                android:id="@+id/button_contra"
+                style="@style/Material.Drawable.Ripple.Wave"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorGrayDark"
+                android:textAllCaps="false"
+                android:text="Contra"
+                android:textSize="@dimen/text_m"
+                android:minWidth="@dimen/dim_buttonwidth"
+                android:textStyle="normal"
+                app:rd_enable="true"
+                android:drawableTop="@drawable/icon_contra"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="@dimen/padding_m"
+                />
+
+            <com.rey.material.widget.Button
+                android:id="@+id/button_ledger"
+                style="@style/Material.Drawable.Ripple.Wave"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorGrayDark"
+                android:textAllCaps="false"
+                android:text="Ledger view"
+                android:textSize="@dimen/text_m"
+                android:minWidth="@dimen/dim_buttonwidth"
+                android:textStyle="normal"
+                app:rd_enable="true"
+                android:drawableTop="@drawable/icon_contra"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="@dimen/padding_m"
+                />
+
+        </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <FrameLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+          >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+            android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
+
+

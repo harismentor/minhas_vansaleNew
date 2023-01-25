@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_m"
+    android:orientation="horizontal"
+    android:id="@+id/layout_view">
+
+
+    <LinearLayout
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorGraylight">
+
+        <!--Sl No-->
+        <TextView
+            android:id="@+id/textView_item_stock_serialNo"
+            android:layout_width="0dp"
+            android:textColor="@color/grayText"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/textid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_l"
+            android:gravity="start|center"
+            android:text=""
+            android:textColor="@color/grayText"
+            android:textSize="@dimen/text_s" />
+
+        <TextView
+            android:layout_toRightOf="@+id/textid"
+            android:id="@+id/textView_item_stock_transferid"
+            android:layout_width="wrap_content"
+            android:textColor="@color/grayText"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_m"
+            android:paddingBottom="@dimen/padding_m"
+            android:gravity="start|center"/>
+
+
+        <TextView
+            android:layout_toLeftOf="@+id/textView_item_stock_date"
+            android:layout_width="wrap_content"
+            android:textColor="@color/grayText"
+            android:layout_height="wrap_content"
+            android:text="Date : "
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_s"
+            android:gravity="start|center"/>
+
+
+        <TextView
+            android:id="@+id/textView_item_stock_date"
+            android:layout_width="wrap_content"
+            android:textColor="@color/grayText"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/padding_l"
+           />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorgreylight_bg"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/padding_l"
+        android:layout_marginRight="@dimen/padding_l">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From"
+                android:layout_marginTop="@dimen/padding_m"
+                android:layout_marginLeft="@dimen/padding_m"
+                android:textSize="@dimen/text_s"
+                android:gravity="start|center"/>
+
+            <TextView
+                android:id="@+id/textView_item_stock_from"
+                android:layout_width="match_parent"
+                android:textColor="@color/grayText"
+                android:layout_height="match_parent"
+                android:gravity="start|center"
+                />
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorgreylight_bg"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To"
+                android:layout_marginTop="@dimen/padding_m"
+                android:layout_marginLeft="@dimen/padding_m"
+                android:textSize="@dimen/text_s"
+                android:gravity="start|center"/>
+
+
+            <TextView
+                android:id="@+id/textView_item_stock_to"
+                android:layout_width="match_parent"
+                android:textColor="@color/grayText"
+                android:layout_height="match_parent"
+
+                android:gravity="start|center"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorgreylight_bg"/>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:layout_marginTop="@dimen/padding_m"
+                    android:layout_marginLeft="@dimen/padding_m"
+                    android:textSize="@dimen/text_s"
+                    android:gravity="start|center"/>
+
+
+                <TextView
+                    android:id="@+id/textView_item_stock_description"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/grayText"
+                    android:layout_height="match_parent"
+
+                    android:gravity="start|center"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+
+
+</LinearLayout>

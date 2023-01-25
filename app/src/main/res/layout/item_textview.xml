@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_row"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:padding="@dimen/padding_l">
+
+
+        <TextView
+            android:id="@+id/textView_item_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="@dimen/text_l"
+            android:layout_marginLeft="@dimen/padding_l"
+            android:textColor="@color/primaryText"
+            tools:ignore="RtlHardcoded"
+            android:textAppearance="?attr/textAppearanceListItem"/>
+
+
+
+
+</FrameLayout>

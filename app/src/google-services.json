@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "936843709563",
+    "project_id": "omanvansale-f8b86",
+    "storage_bucket": "omanvansale-f8b86.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936843709563:android:8feca8a3cbb604e4de66de",
+        "android_client_info": {
+          "package_name": "com.advanced.omanvansale"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936843709563-haathc99hpvb0vonmaa6t08gnufr9vie.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-6Ae5v1YHhT5IxnGBSbJMr-ZyMyWcohw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "936843709563-haathc99hpvb0vonmaa6t08gnufr9vie.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+
+    <include
+        layout="@layout/toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_toolbar_height"
+        />
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/padding_4xxl"
+        android:layout_marginTop="@dimen/padding_4xxl"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_2xxl"
+        android:paddingTop="@dimen/padding_2xxl">
+
+        <!--weight 3-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_2xxl"
+            >
+
+
+            <!--collection-->
+            <android.support.v7.widget.CardView
+                android:visibility="gone"
+                android:id="@+id/cardView_report_outstanding"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/dash_board_padding"
+                android:layout_marginStart="@dimen/dash_board_padding"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:backgroundTint="@color/colorGreydashboard_bg"
+                app:cardUseCompatPadding="false"
+                card_view:cardCornerRadius="@dimen/card_report_icon_corner_radius">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true">
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_report_ageing_white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/padding_xxl"
+                                android:layout_marginStart="@dimen/padding_xxl"
+                                android:text="Outstanding Report"
+                                android:textColor="@color/colorBlack"
+                                android:gravity="center"
+                                android:textSize="@dimen/text_l" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!--collection-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView_report_sale"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/dash_board_padding"
+                android:layout_marginStart="@dimen/dash_board_padding"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:backgroundTint="@color/colorGreydashboard_bg"
+                app:cardUseCompatPadding="false"
+                card_view:cardCornerRadius="@dimen/card_report_icon_corner_radius">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true">
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_report_ageing_white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/padding_xxl"
+                                android:layout_marginStart="@dimen/padding_xxl"
+                                android:text="Sale Report"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/text_l" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+            <!--help-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView_report_bonus"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/dash_board_padding"
+                android:layout_marginStart="@dimen/dash_board_padding"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:backgroundTint="@color/colorGreydashboard_bg"
+                app:cardUseCompatPadding="false"
+                card_view:cardCornerRadius="@dimen/card_report_icon_corner_radius"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_report_collection_white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/padding_xxl"
+                                android:layout_marginStart="@dimen/padding_xxl"
+
+                                android:text="Bonus Report"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/text_l" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_2xxl"
+            >
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView_report_return"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/dash_board_padding"
+                android:layout_marginStart="@dimen/dash_board_padding"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:backgroundTint="@color/colorGreydashboard_bg"
+                app:cardUseCompatPadding="false"
+                card_view:cardCornerRadius="@dimen/card_report_icon_corner_radius">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_report_ageing_white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/padding_xxl"
+                                android:layout_marginLeft="@dimen/padding_xxl"
+                                android:text="Return Report"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/text_l" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_2xxl"
+            >
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView_report_receipt"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/dash_board_padding"
+                android:layout_marginStart="@dimen/dash_board_padding"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:backgroundTint="@color/colorGreydashboard_bg"
+                app:cardUseCompatPadding="false"
+                card_view:cardCornerRadius="@dimen/card_report_icon_corner_radius">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_report_ageing_white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/padding_xxl"
+                                android:layout_marginLeft="@dimen/padding_xxl"
+                                android:text="Receipt Report"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/text_l" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/cardView_report_daily"
+            android:clickable="true"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_2xxl">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dash_board_padding"
+                android:layout_marginEnd="@dimen/dash_board_padding"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorGreydashboard_bg"
+                app:cardUseCompatPadding="false"
+                card_view:cardCornerRadius="@dimen/card_report_icon_corner_radius">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false">
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_report_ageing_white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Day Report"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/text_l" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/cardView_report_day_summary"
+            android:clickable="true"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_2xxl">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dash_board_padding"
+                android:layout_marginEnd="@dimen/dash_board_padding"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorGreydashboard_bg"
+                app:cardUseCompatPadding="false"
+                card_view:cardCornerRadius="@dimen/card_report_icon_corner_radius">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false">
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_report_ageing_white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Day Summary Report"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/text_l" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/cardView_report_daily_products"
+            android:clickable="true"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_2xxl">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dash_board_padding"
+                android:layout_marginEnd="@dimen/dash_board_padding"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorGreydashboard_bg"
+                app:cardUseCompatPadding="false"
+                card_view:cardCornerRadius="@dimen/card_report_icon_corner_radius">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false">
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_report_ageing_white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Daily Product Report"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/text_l" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_2xxl"
+            >
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView_report_productwise"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/dash_board_padding"
+                android:layout_marginStart="@dimen/dash_board_padding"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:backgroundTint="@color/colorGreydashboard_bg"
+                app:cardUseCompatPadding="false"
+                card_view:cardCornerRadius="@dimen/card_report_icon_corner_radius">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_report_ageing_white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/padding_xxl"
+                                android:layout_marginLeft="@dimen/padding_xxl"
+                                android:text="Productwise Report"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/text_l" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_2xxl"
+            >
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView_report_invoicewise"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/dash_board_padding"
+                android:layout_marginStart="@dimen/dash_board_padding"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:backgroundTint="@color/colorGreydashboard_bg"
+                app:cardUseCompatPadding="false"
+                card_view:cardCornerRadius="@dimen/card_report_icon_corner_radius">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_report_ageing_white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/padding_xxl"
+                                android:layout_marginLeft="@dimen/padding_xxl"
+                                android:text="Invoicewise Report"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/text_l" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--stock-->
+    <!--<android.support.v7.widget.CardView
+        android:id="@+id/view_badge_report_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        app:cardBackgroundColor="@color/colorReportIcon"
+        app:cardCornerRadius="@dimen/card_report_icon_corner_radius"
+        app:contentPadding="@dimen/padding_l"
+        app:layout_anchor="@id/cardView_report_bonus"
+        app:layout_anchorGravity="center|left">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_report_collection_white" />
+
+
+    </android.support.v7.widget.CardView>-->
+
+
+    <!--order-->
+    <!--<android.support.v7.widget.CardView
+        android:id="@+id/view_badge_report_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        app:cardBackgroundColor="@color/colorReportIcon"
+        app:cardCornerRadius="@dimen/card_report_icon_corner_radius"
+        app:contentPadding="@dimen/padding_l"
+        app:layout_anchor="@id/cardView_report_outstanding"
+        app:layout_anchorGravity="center|left">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_report_ageing_white" />
+
+
+    </android.support.v7.widget.CardView>-->
+
+    </LinearLayout>
+
+</ScrollView>

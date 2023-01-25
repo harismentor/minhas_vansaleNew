@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:padding="@dimen/padding_l"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/textView_dayRegister_Dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/padding_l"
+            android:paddingEnd="@dimen/padding_l"
+            android:text="Billwise Receipt"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_xl"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/padding_xl"
+            android:layout_marginStart="@dimen/padding_xl"/>
+
+
+
+
+        <TextView
+            android:id="@+id/textView_dayRegister_Dialog_executiveName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_m"
+            android:textColor="@color/colorWhite"
+            android:layout_marginStart="@dimen/padding_xl"
+            android:textSize="@dimen/text_l"
+            android:gravity="end"
+            android:layout_gravity="start"
+            android:layout_marginLeft="@dimen/padding_xl"/>
+
+
+        <TextView
+            android:id="@+id/textView_dayRegister_Dialog_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_m"
+            android:textColor="@color/colorWhite"
+            android:layout_marginStart="@dimen/padding_xl"
+            android:textSize="@dimen/text_m"
+            android:gravity="start"
+            android:layout_marginLeft="@dimen/padding_xl"
+            android:layout_gravity="start"/>
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/edt_amount"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:hint="Amount * "
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textSize="@dimen/text_m" />
+
+
+
+        <EditText
+            android:id="@+id/edt_discount"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:hint="Discount  "
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textSize="@dimen/text_m" />
+
+
+
+
+        <EditText
+            android:id="@+id/edt_remarks"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:hint="Remarks "
+            android:inputType="text"
+            android:textSize="@dimen/text_m"
+            android:padding="10dp"
+
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/padding_xxl">
+
+
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/padding_l"
+                android:minWidth="@dimen/layout_width"
+                android:layout_gravity="start"
+                android:layout_marginEnd="@dimen/padding_xxl"
+                android:layout_marginRight="@dimen/padding_xxl">
+
+
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/item_divider_horizontal_dark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:orientation="horizontal"
+        >
+
+        <com.rey.material.widget.Button
+            android:id="@+id/button_billwise_Dialog_cancel"
+            style="@style/Material.Drawable.Ripple.Wave"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_toolbar_height"
+            android:background="@color/colorTransparent"
+            android:layout_margin="@dimen/padding_xl"
+            android:layout_gravity="center"
+            android:textColor="@color/grayText"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_l"
+            android:paddingLeft="@dimen/button_padding"
+            android:paddingRight="@dimen/button_padding"
+            android:text="CANCEL"
+            app:rd_enable="true"/>
+
+
+        <com.rey.material.widget.Button
+            android:id="@+id/button_billwise_Dialog_ok"
+            style="@style/Material.Drawable.Ripple.Wave"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_toolbar_height"
+            android:background="@color/colorTransparent"
+            android:layout_margin="@dimen/padding_xl"
+            android:layout_gravity="center"
+            android:textColor="@color/grayText"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_l"
+            android:paddingLeft="@dimen/button_padding"
+            android:paddingRight="@dimen/button_padding"
+            android:text="OK"
+            app:rd_enable="true"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

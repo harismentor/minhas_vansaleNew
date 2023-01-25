@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentTop="true"
+                android:weightSum="2"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:text="Size And Quantity"
+
+
+                    android:textSize="@dimen/text_xl"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorBlue"
+                android:padding="10dp"
+                >
+
+
+                <TextView
+                    style="@style/TextViewBoldGrayStyle"
+                    android:layout_weight="1"
+                    android:text="Size"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_m" />
+
+                <TextView
+                    style="@style/TextViewBoldGrayStyle"
+                    android:textColor="@color/colorWhite"
+                    android:layout_weight="1"
+                    android:text="Available Qty"
+                    android:textSize="@dimen/text_m"
+                    android:id="@+id/tv_title"/>
+                <TextView
+                    style="@style/TextViewBoldGrayStyle"
+                    android:textColor="@color/colorWhite"
+                    android:layout_weight="1"
+                    android:text="Qty"
+                    android:textSize="@dimen/text_m" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/recycler"
+                android:padding="@dimen/padding_xl">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:id="@+id/recyclerview"/>
+
+            </LinearLayout>
+
+
+
+
+            <!--        <LinearLayout-->
+            <!--            android:layout_alignParentBottom="true"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:orientation="vertical"-->
+            <!--            android:weightSum="3"-->
+            <!--            android:layout_marginTop="10dp"-->
+            <!--            android:padding="10dp"-->
+            <!--            -->
+            <!--            >-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:layout_below="@+id/recycler"
+
+                >
+                <TextView
+                    style="@style/TextViewBoldGrayStyle"
+                    android:layout_weight="1"
+
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_m" />
+
+                <TextView
+                    android:id="@+id/tv_total"
+                    style="@style/TextViewBoldGrayStyle"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="1"
+                    android:text="Total"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_m" />
+
+                <TextView
+                    android:id="@+id/tv_qty"
+                    style="@style/TextViewBoldGrayStyle"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="1"
+
+                    android:textSize="@dimen/text_m" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                >
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/bt_cancel"
+                    android:textColor="@color/colorWhite"
+                    android:text="CANCEL"
+                    android:gravity="center"
+                    android:background="@color/colorRed"
+                    android:layout_marginRight="5dp"
+
+
+                    />
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/bt_save"
+                    android:textColor="@color/colorWhite"
+                    android:text="SAVE"
+                    android:gravity="center"
+                    android:background="@color/colorGreen"
+                    android:layout_marginLeft="5dp"
+
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

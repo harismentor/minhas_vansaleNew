@@ -1,0 +1,71 @@
+<resources>
+    <dimen name="layout_margin">16dp</dimen>
+
+
+    <!--Padding-->
+    <dimen name="padding_s">1dp</dimen>
+    <dimen name="padding_m">3dp</dimen>
+    <dimen name="padding_l">6dp</dimen>
+    <dimen name="padding_xl">10dp</dimen>
+    <dimen name="padding_xxl">14dp</dimen>
+    <dimen name="padding_xxxl">20dp</dimen>
+    <dimen name="padding_2xxl">22dp</dimen>
+    <dimen name="padding_4xxl">26dp</dimen>
+
+    <dimen name="dash_board_padding">22dp</dimen>
+
+    <dimen name="divider_padding">3dp</dimen>
+
+    <dimen name="padding_add_new_shop">120dp</dimen>
+
+    <dimen name="padding_add_new_shop_card">42dp</dimen>
+
+    <dimen name="card_report_icon_corner_radius">4dp</dimen>
+
+
+    <!--text-->
+
+    <dimen name="text_s">12sp</dimen>
+    <dimen name="text_m">14sp</dimen>
+    <dimen name="text_l">16sp</dimen>
+    <dimen name="text_xl">18sp</dimen>
+    <dimen name="text_xxl">20sp</dimen>
+    <dimen name="text_xxxl">22sp</dimen>
+
+    <dimen name="text_2xxl">24sp</dimen>
+    <dimen name="text_4xxl">26sp</dimen>
+    <dimen name="button_padding">16dp</dimen>
+
+
+    <dimen name="text_dashBoard">22sp</dimen>
+
+
+    <dimen name="view_horizontal">1dp</dimen>
+
+
+    <dimen name="card_corner_radius">10dp</dimen>
+
+
+    <!--height and width-->
+
+    <dimen name="spinner_height">30dp</dimen>
+    <dimen name="percentage_height">25dp</dimen>
+    <dimen name="button_height">35dp</dimen>
+    <dimen name="cart_button_height">30dp</dimen>
+    <dimen name="button_toolbar_height">35dp</dimen>
+    <dimen name="dashBoard_icon_badge_height">40dp</dimen>
+    <dimen name="dashBoard_icon_badge_width">6dp</dimen>
+    <dimen name="layout_width">200dp</dimen>
+    <dimen name="SearchableSpinner_height">35dp</dimen>
+    <dimen name="view_width">3dp</dimen>
+
+
+    <dimen name="percentage_bar_height">8dp</dimen>
+
+    <dimen name="custom_toolbar_height">80dp</dimen>
+    <dimen name="editText_width">120dp</dimen>
+
+
+
+
+</resources>

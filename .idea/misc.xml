@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Adroid_Projects/Zaharrath-master/app/src/main/res/layout/activity_dailysummary_preview.xml" value="0.18177083333333333" />
+        <entry key="..\:/Adroid_Projects/Zaharrath-master/app/src/main/res/layout/activity_preview_receipt.xml" value="0.18177083333333333" />
+        <entry key="..\:/Adroid_Projects/Zaharrath-master/app/src/main/res/layout/activity_receipt_n.xml" value="0.23020833333333332" />
+        <entry key="..\:/Adroid_Projects/Zaharrath-master/app/src/main/res/layout/activity_receipt_preview.xml" value="0.23020833333333332" />
+        <entry key="..\:/Adroid_Projects/Zaharrath-master/app/src/main/res/layout/activity_report_day_summary.xml" value="0.18177083333333333" />
+        <entry key="..\:/Adroid_Projects/Zaharrath-master/app/src/main/res/layout/activity_sales.xml" value="0.234375" />
+        <entry key="..\:/Adroid_Projects/Zaharrath-master/app/src/main/res/layout/dialog_day_register.xml" value="0.16799999999999998" />
+        <entry key="..\:/Adroid_Projects/Zaharrath-master/app/src/main/res/layout/dialog_sale_settings.xml" value="0.264" />
+        <entry key="..\:/Adroid_Projects/Zaharrath-master/app/src/main/res/layout/drawer_sales.xml" value="0.234375" />
+        <entry key="..\:/Adroid_Projects/Zaharrath-master/app/src/main/res/layout/fragment_sales.xml" value="0.2109375" />
+        <entry key="..\:/Adroid_Projects/Zaharrath-master/app/src/main/res/layout/fragment_shop_dash_board.xml" value="0.221875" />
+        <entry key="..\:/Adroid_Projects/Zaharrath-master/app/src/main/res/layout/item_history_report.xml" value="0.12604166666666666" />
+        <entry key="..\:/Adroid_Projects/Zaharrath-master/app/src/main/res/layout/toolbar_container.xml" value="0.234375" />
+        <entry key="..\:/Adroid_Projects/sunrise_281222-master/app/src/main/res/drawable-hdpi/ic_baseline_settings_24.xml" value="0.121" />
+        <entry key="..\:/Adroid_Projects/sunrise_281222-master/app/src/main/res/drawable-xhdpi/ic_baseline_settings_24.xml" value="0.121" />
+        <entry key="..\:/Adroid_Projects/sunrise_281222-master/app/src/main/res/layout/activity_dailysummary_preview.xml" value="0.10989583333333333" />
+        <entry key="..\:/Adroid_Projects/sunrise_281222-master/app/src/main/res/layout/activity_preview_receipt.xml" value="0.10989583333333333" />
+        <entry key="..\:/Adroid_Projects/sunrise_281222-master/app/src/main/res/layout/activity_receipt_n.xml" value="0.10989583333333333" />
+        <entry key="..\:/Adroid_Projects/sunrise_281222-master/app/src/main/res/layout/activity_stock_transfer_online.xml" value="0.10989583333333333" />
+        <entry key="..\:/Adroid_Projects/sunrise_281222-master/app/src/main/res/layout/dialog_sale_settings.xml" value="0.10989583333333333" />
+        <entry key="..\:/Adroid_Projects/sunrise_281222-master/app/src/main/res/layout/dialog_sale_vat_type.xml" value="0.10989583333333333" />
+        <entry key="..\:/Adroid_Projects/sunrise_281222-master/app/src/main/res/layout/toolbar_container.xml" value="0.10364583333333334" />
+        <entry key="..\:/Haris_code/Zaharrath-master/app/src/main/res/drawable/ic_edit_blue.xml" value="0.1975" />
+        <entry key="..\:/Haris_code/Zaharrath-master/app/src/main/res/layout/activity_dailysummary_preview.xml" value="0.24114583333333334" />
+        <entry key="..\:/Haris_code/Zaharrath-master/app/src/main/res/layout/activity_order_placing.xml" value="0.17135416666666667" />
+        <entry key="..\:/Haris_code/Zaharrath-master/app/src/main/res/layout/activity_preview_receipt.xml" value="0.26927083333333335" />
+        <entry key="..\:/Haris_code/Zaharrath-master/app/src/main/res/layout/activity_report_sale.xml" value="0.2625" />
+        <entry key="..\:/Haris_code/Zaharrath-master/app/src/main/res/layout/activity_van_stock.xml" value="0.2625" />
+        <entry key="..\:/Haris_code/Zaharrath-master/app/src/main/res/layout/dialog_payment_type.xml" value="0.23177083333333334" />
+        <entry key="..\:/Haris_code/Zaharrath-master/app/src/main/res/layout/fragment_home_dash_board_left.xml" value="0.13854166666666667" />
+        <entry key="..\:/Haris_code/Zaharrath-master/app/src/main/res/layout/fragment_sales_edit.xml" value="0.18125" />
+        <entry key="..\:/Haris_code/Zaharrath-master/app/src/main/res/layout/item_history_report.xml" value="0.2625" />
+        <entry key="..\:/Haris_code/Zaharrath-master/app/src/main/res/layout/item_salereport.xml" value="0.2625" />
+        <entry key="..\:/Users/HP/Desktop/Chipsmart_vansale-master-master/app/src/main/res/layout/fragment_sales.xml" value="0.264" />
+        <entry key="..\:/Zaharrath-master/app/src/main/res/layout/activity_preview2.xml" value="0.5304878048780488" />
+        <entry key="..\:/Zaharrath-master/app/src/main/res/layout/activity_preview_receipt.xml" value="0.1" />
+        <entry key="..\:/Zaharrath-master/app/src/main/res/layout/activity_receipt_preview.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

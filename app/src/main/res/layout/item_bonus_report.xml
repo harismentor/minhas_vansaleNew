@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:layout_marginLeft="@dimen/padding_xl"
+        android:layout_marginRight="@dimen/padding_xl"
+        >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_marginTop="@dimen/padding_xl"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:text="Invoice"
+        android:lines="1"
+        android:textColor="@color/colorGrayMedium"
+        android:textSize="@dimen/text_m" />
+
+    <TextView
+        android:layout_marginTop="@dimen/padding_xl"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="left"
+        android:text="Credit Note No."
+        android:lines="1"
+        android:textColor="@color/colorGrayMedium"
+        android:textSize="@dimen/text_m" />
+
+    <TextView
+        android:layout_marginTop="@dimen/padding_xl"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="Bonus Amnt."
+        android:lines="1"
+        android:textColor="@color/colorGreen"
+        android:textSize="@dimen/text_m" />
+
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_bonus_invoiceno"
+                android:layout_marginTop="@dimen/padding_m"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Invoice"
+                android:lines="1"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_l" />
+
+
+            <TextView
+                android:id="@+id/text_bonus_creditnoteno"
+                android:layout_marginTop="@dimen/padding_m"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="left"
+                android:text="Credit Note No."
+                android:lines="1"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_l" />
+
+            <TextView
+                android:id="@+id/text_bonus_bonusamount"
+                android:layout_marginTop="@dimen/padding_m"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="Bonus Amnt."
+                android:lines="1"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_l"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginTop="@dimen/padding_l"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="left"
+                android:text="Customer Name"
+                android:lines="1"
+                android:textColor="@color/colorGrayMedium"
+                android:textSize="@dimen/text_m" />
+
+            <TextView
+                android:layout_marginTop="@dimen/padding_l"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="Bonus Return"
+                android:lines="1"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/text_m" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/padding_l">
+
+            <TextView
+                android:id="@+id/text_bonus_customername"
+                android:layout_marginTop="@dimen/padding_m"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="left"
+                android:text="Invoice"
+                android:lines="1"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_l" />
+
+
+
+            <TextView
+                android:id="@+id/text_bonus_returnamount"
+                android:layout_marginTop="@dimen/padding_m"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="Bonus Amnt."
+                android:lines="1"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_l"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

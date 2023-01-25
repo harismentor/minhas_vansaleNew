@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:layout_marginBottom="@dimen/padding_4xxl">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--weight 1-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!--receipt No-->
+                    <!--<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_xl"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_xl">
+
+                        <TextView
+                            style="@style/TextViewBoldGrayStyle"
+                            android:layout_weight="2"
+                            android:text="Receipt No"
+                            android:textSize="@dimen/text_m" />
+
+                        <EditText
+                            android:id="@+id/editText_receipt_receiptNo"
+                            style="@style/EditTextReceiptStyle"
+                            android:layout_marginLeft="@dimen/padding_2xxl"
+                            android:layout_marginRight="@dimen/padding_2xxl"
+                            android:layout_weight="3"
+                            android:background="@drawable/rectangle_input"
+                            android:gravity="start|center"
+                            android:inputType="text" />
+
+                    </LinearLayout>-->
+
+
+
+                    <!--Outstanding Amount-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_xl"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_xl">
+
+                        <TextView
+                            style="@style/TextViewBoldGrayStyle"
+                            android:layout_weight="2"
+                            android:text="Outstanding Amount"
+                            android:textSize="@dimen/text_m" />
+
+
+                        <TextView
+                            android:id="@+id/textView_receipt_outstandingAmount"
+                            style="@style/EditTextReceiptStyle"
+                            android:layout_marginLeft="@dimen/padding_2xxl"
+                            android:layout_marginRight="@dimen/padding_xl"
+                            android:layout_weight="3"
+                            android:focusable="false"
+                            android:background="@drawable/rectangle_input"
+                            android:gravity="end|center" />
+
+
+                    </LinearLayout>
+
+
+                    <!--Amount Paid-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_l"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_xl">
+
+
+                        <TextView
+                            style="@style/TextViewBoldGrayStyle"
+                            android:layout_weight="2"
+                            android:text="Amount Paid"
+                            android:textSize="@dimen/text_m" />
+
+
+                        <EditText
+                            android:id="@+id/editText_receipt_amountPaid"
+                            style="@style/EditTextReceiptStyle"
+                            android:layout_marginLeft="@dimen/padding_2xxl"
+                            android:layout_marginRight="@dimen/padding_xl"
+                            android:layout_weight="3"
+                            android:background="@drawable/rectangle_input"
+                            android:gravity="end|center"
+                            android:inputType="numberDecimal" />
+
+
+                    </LinearLayout>
+
+
+                    <!--Balance Amount-->
+
+                   <!-- <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_l"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_xl"
+                        >
+
+
+                        <TextView
+                            style="@style/TextViewBoldGrayStyle"
+                            android:layout_weight="2"
+                            android:text="Balance Amount"
+                            android:textSize="@dimen/text_m" />
+
+
+                        <TextView
+                            android:id="@+id/textView_receipt_balanceAmount"
+                            style="@style/EditTextReceiptStyle"
+                            android:layout_marginLeft="@dimen/padding_2xxl"
+                            android:layout_marginRight="@dimen/padding_2xxl"
+                            android:layout_weight="3"
+                            android:focusable="false"
+                            android:background="@drawable/rectangle_input"
+                            android:gravity="end|center" />
+
+
+                    </LinearLayout>
+-->
+
+                    <!--Cheque No-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_l"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_xl">
+
+
+                        <TextView
+                            style="@style/TextViewBoldGrayStyle"
+                            android:layout_weight="2"
+                            android:text="Cheque No"
+                            android:textSize="@dimen/text_m" />
+
+
+                        <EditText
+                            android:id="@+id/editText_receipt_checkNo"
+                            style="@style/EditTextReceiptStyle"
+                            android:layout_marginLeft="@dimen/padding_2xxl"
+                            android:layout_marginRight="@dimen/padding_xl"
+                            android:layout_weight="3"
+                            android:background="@drawable/rectangle_input"
+                            android:gravity="start|center"
+                            android:inputType="text" />
+
+                    </LinearLayout>
+
+
+                    <!--company bank-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_xl"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_xl">
+
+
+                        <TextView
+                            style="@style/TextViewBoldGrayStyle"
+                            android:layout_weight="2"
+                            android:text="Company Bank"
+                            android:textSize="@dimen/text_m" />
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/padding_2xxl"
+                            android:layout_marginRight="@dimen/padding_xl"
+                            android:layout_weight="3"
+                            android:background="@drawable/rect_text_view_disable"
+                            android:minHeight="@dimen/spinner_height">
+
+
+                            <android.support.v7.widget.AppCompatSpinner
+                                android:id="@+id/spinner_receipt_company_bank"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:spinnerMode="dropdown"
+                                android:theme="@style/ViewTheme_dark" />
+
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+
+
+                    <!--payment mode-->
+
+                    <!--<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_xl"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_xl">
+
+
+                        <TextView
+                            style="@style/TextViewBoldGrayStyle"
+                            android:layout_weight="2"
+                            android:text="Payment Mode"
+                            android:textSize="@dimen/text_m" />
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/padding_2xxl"
+                            android:layout_marginRight="@dimen/padding_2xxl"
+                            android:layout_weight="3"
+                            android:background="@drawable/rect_text_view_disable"
+                            android:minHeight="@dimen/spinner_height">
+
+                            <android.support.v7.widget.AppCompatSpinner
+                                android:id="@+id/spinner_receipt_payment_mode"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:entries="@array/payment_type_array"
+                                android:spinnerMode="dropdown"
+                                android:theme="@style/ViewTheme_dark" />
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+-->
+                    <!--remarks-->
+                  <!--  <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_xl"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_xl">
+
+                        <TextView
+                            style="@style/TextViewBoldGrayStyle"
+                            android:layout_weight="2"
+                            android:gravity="start"
+                            android:text="Remarks"
+                            android:textSize="@dimen/text_m" />
+
+
+                        <EditText
+                            android:id="@+id/editText_receipt_remarks"
+                            style="@style/EditTextReceiptStyle"
+                            android:layout_marginLeft="@dimen/padding_2xxl"
+                            android:layout_marginRight="@dimen/padding_2xxl"
+                            android:layout_weight="3"
+                            android:background="@drawable/rect_text_view_disable"
+                            android:gravity="start"
+                            android:inputType="textMultiLine"
+                            android:lineSpacingExtra="3dp"
+                            android:lines="3"
+
+                            />
+
+
+                    </LinearLayout>-->
+
+                </LinearLayout>
+
+
+                <!--weight 2-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <!--customer bank-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_l"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_xl">
+
+
+                        <TextView
+                            style="@style/TextViewBoldGrayStyle"
+                            android:layout_weight="2"
+                            android:text="Customer Bank"
+                            android:textSize="@dimen/text_m" />
+
+                        <EditText
+                            android:id="@+id/editText_receipt_customerBank"
+                            style="@style/EditTextReceiptStyle"
+                            android:layout_marginLeft="@dimen/padding_2xxl"
+                            android:layout_marginRight="@dimen/padding_xl"
+                            android:layout_weight="3"
+                            android:background="@drawable/rectangle_input"
+                            android:gravity="start|center"
+                            android:inputType="text" />
+
+
+                        <!--
+
+                                                    <FrameLayout
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_marginLeft="@dimen/padding_2xxl"
+                                                        android:layout_marginRight="@dimen/padding_2xxl"
+                                                        android:layout_weight="3"
+                                                        android:background="@drawable/rect_text_view_disable"
+                                                        android:minHeight="@dimen/spinner_height">
+
+
+                                                        <android.support.v7.widget.AppCompatSpinner
+                                                            android:id="@+id/spinner_receipt_customer_bank"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+                                                            android:layout_gravity="center"
+                                                            android:spinnerMode="dropdown"
+                                                            android:theme="@style/ViewTheme_dark" />
+
+                                                    </FrameLayout>
+
+                        -->
+
+                    </LinearLayout>
+
+
+                    <!--cheque received date-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_l"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_xl">
+
+
+                        <TextView
+                            style="@style/TextViewBoldGrayStyle"
+                            android:layout_weight="2"
+                            android:text="Cheque Date"
+                            android:textSize="@dimen/text_m" />
+
+
+                        <TextView
+                            android:id="@+id/textView_receipt_cheque_receivedDate"
+                            style="@style/EditTextReceiptStyle"
+                            android:layout_marginLeft="@dimen/padding_2xxl"
+                            android:layout_marginRight="@dimen/padding_xl"
+                            android:layout_weight="3"
+                            android:background="@drawable/rectangle_input"
+                            android:drawableEnd="@drawable/ic_date_picker"
+                            android:drawablePadding="@dimen/padding_xxl"
+                            android:drawableRight="@drawable/ic_date_picker"
+                            android:gravity="start|center"
+                            android:textColor="@color/grayText" />
+
+
+                    </LinearLayout>
+                    <!--cheque clearing date-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_l"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_xl">
+
+
+                        <TextView
+                            style="@style/TextViewBoldGrayStyle"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="Cheque Clearing Date"
+                            android:textSize="@dimen/text_m" />
+
+
+                        <TextView
+                            android:id="@+id/textView_receipt_cheque_clearingDate"
+                            style="@style/EditTextReceiptStyle"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_2xxl"
+                            android:layout_marginRight="@dimen/padding_xl"
+                            android:layout_weight="3"
+                            android:background="@drawable/rectangle_input"
+                            android:drawableEnd="@drawable/ic_date_picker"
+                            android:drawablePadding="@dimen/padding_xxl"
+                            android:drawableRight="@drawable/ic_date_picker"
+                            android:gravity="start|center"
+                            android:lines="1"
+                            android:singleLine="true"
+                            android:textColor="@color/grayText" />
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                        <TextView
+                            android:clickable="true"
+                            android:padding="5dp"
+                            android:layout_gravity="right"
+                            android:id="@+id/close"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Close"
+                            android:layout_marginRight="@dimen/padding_2xxl"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toLeftOf="@+id/button_receipt_submitApproval"/>
+
+
+                        <com.rey.material.widget.Button
+                            android:id="@+id/button_receipt_submitApproval"
+                            style="@style/Material.Drawable.Ripple.Wave"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/button_height"
+                            android:text="Submit for Approval"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_m"
+                            app:rd_enable="true"
+                            android:layout_marginTop="@dimen/padding_xxl"
+                            android:background="@drawable/button_green_rect"
+                            android:paddingLeft="@dimen/padding_xl"
+                            android:paddingRight="@dimen/padding_xl"
+                            android:layout_gravity="end"
+                            android:layout_marginRight="@dimen/padding_2xxl"
+                            android:layout_marginEnd="@dimen/padding_2xxl"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginBottom="@dimen/padding_xxl"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

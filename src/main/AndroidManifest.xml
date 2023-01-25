@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.advanced.sunrise"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <application
+        android:name="com.advanced.minhas.controller.ApplicationController"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon_round"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <activity
+            android:name="com.advanced.minhas.activity.Stock_Transfer_Online"
+            android:exported="false" />
+        <activity
+            android:name="com.advanced.minhas.activity.Dailysummary_Preview"
+            android:exported="false" />
+        <activity
+            android:name="com.advanced.minhas.activity.Preview_Receipt"
+            android:exported="false" />
+        <activity
+            android:name="com.advanced.minhas.activity.ReceiptActivity_N"
+            android:exported="false" />
+        <activity
+            android:name="com.advanced.minhas.activity.OrderPlacing"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.advanced.minhas.activity.PreviewActivity_FF"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.advanced.minhas.activity.report.InvoicewiseReport"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.advanced.minhas.activity.report.ProductwiseReport"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.advanced.minhas.activity.StockTransfer"
+            android:exported="false" />
+        <activity
+            android:name="com.advanced.minhas.activity.ReportReceipt"
+            android:exported="false" />
+        <activity
+            android:name="com.advanced.minhas.activity.ReportReturn"
+            android:exported="false" />
+        <activity
+            android:name="com.advanced.minhas.activity.ReportSale"
+            android:exported="false" />
+        <activity
+            android:name="com.advanced.minhas.activity.StockApproval"
+            android:exported="false" />
+        <activity
+            android:name="com.advanced.minhas.activity.BillwiseReceipt"
+            android:exported="false" />
+        <activity android:name="com.advanced.minhas.activity.LedgerView" />
+        <activity android:name="com.advanced.minhas.activity.StockPreview" />
+        <activity
+            android:name="com.advanced.minhas.activity.ContraVoucher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.advanced.minhas.activity.ExpenseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.advanced.minhas.activity.report.ReportBonus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.advanced.minhas.activity.report.ReportOutstanding"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.advanced.minhas.activity.BillwiseReceiptPreview"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.advanced.minhas.activity.report.ReportDailyProductActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.advanced.minhas.activity.report.Report_Daily"
+            android:exported="false" />
+        <activity
+            android:name="com.advanced.minhas.activity.report.ReportDaySummary"
+            android:exported="false" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <!-- <activity -->
+        <!-- android:name=".deleteActivity" -->
+        <!-- android:label="@string/title_activity_delete" /> -->
+        <activity android:name="com.advanced.minhas.activity.ScannerActivity" />
+        <activity
+            android:name="com.advanced.minhas.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.advanced.minhas.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.advanced.minhas.activity.VanToWarehouse"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.advanced.minhas.activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.advanced.minhas.activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.advanced.minhas.activity.SalesActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.advanced.minhas.activity.AddShopActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.advanced.minhas.activity.VanStockActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.advanced.minhas.activity.ReceiptActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.advanced.minhas.activity.SalesReturnActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.advanced.minhas.activity.PreviewActivity_F"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.advanced.minhas.activity.PreviewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.advanced.minhas.activity.ReceiptPreviewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.advanced.minhas.activity.OtherCustomerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.advanced.minhas.activity.ReportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.advanced.minhas.activity.MapViewActivity"
+            android:hardwareAccelerated="true"
+            android:label="@string/title_activity_map_view"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.advanced.minhas.activity.ReturnPreviewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.advanced.minhas.activity.ReturnHistoryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.advanced.minhas.activity.Expense_Entry" />
+        <activity android:name="com.advanced.minhas.activity.EditCustomer" />
+        <activity android:name="com.advanced.minhas.activity.QuotationHistoryActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCAbXLUhZUccK2gRoOAYMSdI2wxWPvkI1E" /> <!-- android:value="AIzaSyAjtC4VE2pinOoyn5eBNTIRVlTBH6r9Mx4" /> -->
+        <!-- AIzaSyAjtC4VE2pinOoyn5eBNTIRVlTBH6r9Mx4 -->
+        <receiver
+            android:name="com.advanced.minhas.controller.ConnectivityReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission." />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+</manifest>

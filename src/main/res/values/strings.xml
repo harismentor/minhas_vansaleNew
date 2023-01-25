@@ -1,0 +1,195 @@
+<resources>
+    <string name="app_name" translatable="false"> SUNRISE </string>
+    <string name="app_title" translatable="false"> SUNRISE </string>
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="location">Location</string>
+    <string name="shop_name">Shop Name</string>
+    <string name="shop__arab_name">اسم الزبون</string>
+    <string name="trn">TRN</string>
+    <string name="shop">Shop</string>
+    <string name="phone">Phone</string>
+    <string name="mail">Mail</string>
+    <string name="openingbalance">Opening Balance</string>
+    <string name="return_billwise">Billwise </string>
+    <string name="return_advnce">Advance </string>
+    <string name="add">ADD</string>
+    <!--<string name="sr"> AED</string>
+    <string name="currency"> AED</string>-->
+
+    <!-- <item>Retail/Wholesale</item>-->
+
+    <!--array-->
+    <string name="no_internet">No internet Connection</string>
+    <string name="error_view_oops">Oops</string>
+
+    <!--<item>Case</item>-->
+
+    <!--Error View-->
+    <!--NO Internet-->
+
+    <string name="error_view_retry">RETRY</string>
+
+    <string name="error_subtitle_failed_one_more_time">Failed one more time</string>
+
+    <string name="customer_code">Customer Code</string>
+    <string name="sales">Sales</string>
+
+
+    <string name="receipt">Receipt</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="products">Products</string>
+    <string name="sale_qty">Sale Qty</string>
+    <string name="sale_percentage">Sale %</string>
+    <string name="return_percentage">Return %</string>
+    <string name="foc">FOC</string>
+    <string name="remarks">Remarks</string>
+
+
+    <string name="outlet">Outlet</string>
+    <string name="total_cash_sale">Total Cash Sale</string>
+    <string name="total_credit_sale">Total Credit Sale</string>
+    <string name="total_return">Total Return</string>
+    <string name="total_receipt">Total Receipt</string>
+    <string name="total_cash_collection"> Cash Collection</string>
+    <string name="total_bank_collection"> Bank Collection</string>
+    <string name="total_cheque_collection">Cheque Collection</string>
+    <string name="total_cashinhand">Cash in hand</string>
+    <string name="total_return_cash">Sale Return Cash</string>
+
+    <string name="sale_Return">Return</string>
+
+    <string name="van_stock">Van Stock</string>
+    <string name="report">Report</string>
+    <string name="new_shop">New Shop</string>
+    <string name="settings">Settings</string>
+    <string name="invoice">INVOICE</string>
+    <string name="quotation">Quotation</string>
+    <string name="expense">Expense</string>
+    <string name="contra">Contra</string>
+    <string name="new_sale">New Sale</string>
+    <string name="home">HOME</string>
+    <string name="make_payment">MAKE PAYMENT</string>
+
+    <string name="printpdf">PDF Print</string>
+    <string name="print">Print</string>
+    <string name="paid_amount">Paid Amount</string>
+    <string name="finish">Finish</string>
+    <string name="sl_no">Sl.No</string>
+    <string name="invoices">Invoices</string>
+    <!--<string name="paid_amount_">Paid Amount :</string>-->
+
+    <string name="total_amount">Total Amount</string>
+    <string name="new_shop_add">+ NEW SHOP</string>
+    <string name="balance_amount">Balance Amount</string>
+    <string name="manage_payment">Manage Payment</string>
+    <string name="code">Code</string>
+    <string name="product">Product</string>
+    <string name="name">Name</string>
+    <string name="unit">Unit</string>
+    <string name="size">Size</string>
+    <string name="qty">Qty</string>
+    <string name="qty_add">Add Qty</string>
+    <string name="total">Total</string>
+    <string name="descrptn">Descrptn</string>
+    <string name="discount">Product Disc</string>
+
+    <string name="actions">Actions</string>
+    <string name="product_type">Product Type</string>
+    <string name="brand">Brand</string>
+    <string name="wholesale">WholeSale</string>
+    <string name="mrp">MRP</string>
+    <string name="total_quantity">Total QTY</string>
+    <string name="quantity">QUANTITY</string>
+    <string name="total_price">TOTAL PRICE</string>
+    <string name="select_or_search">Select or Search</string>
+    <string name="unit_price">Unit Price</string>
+    <string name="actual_qty">Actual Qty.</string>
+    <string name="return_qty">Return Qty.</string>
+    <string name="refund_amount">Refund Amount</string>
+    <string name="without_invoice">Without Invoice</string>
+    <string name="credit">Credit</string>
+    <string name="balance">Balance</string>
+    <string name="no_support_dialog_title">Do\'Not Support</string>
+    <string name="no_support_dialog_message">Do\'not Support Your Device\n Please Upgrade Tablet</string>
+    <string name="cgst">CGST</string>
+    <string name="sgst">SGST</string>
+    <string name="vat">VAT</string>
+    <string name="vatperc">VAT %</string>
+    <string name="route">Route</string>
+    <string name="address">Address</string>
+    <string name="district">District</string>
+    <string name="accname">Customer Name</string>
+
+    <string name="pincode">Pincode</string>
+    <string name="state">State</string>
+    <string name="telephone">Telephone</string>
+    <string name="contactno">Contact No</string>
+    <string name="creditlimit">Credit Limit</string>
+    <string name="creditperiod">Credit Period</string>
+    <string name="email">Email</string>
+    <string name="contact_person">Contact Person</string>
+    <string name="text_connect">Connect</string>
+    <string name="text_disconnect">Diconnect</string>
+    <string name="text_enable_bluetooth">Enable Bluetooth</string>
+
+    <string name="category">Category</string>
+    <string name="itemname">Item Name</string>
+    <string name="sumofqnty">Sum Of Qty</string>
+    <string name="sumofvalue">Sum Of Value</string>
+    <string name="tax">Tax</string>
+    <string name="grossvalue">Gross Value</string>
+
+
+    <!--printer-->
+    <string name="text_disable_bluetooth">Disable Bluetooth</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="search_customer">Search Customer</string>
+    <string name="payment_type">PAYMENT TYPE</string>
+    <string name="sale_cancel">CANCEL</string>
+    <string name="gstin">GST/VAT NO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="pos_print">POS Print</string>
+    <string name="a4_print">Wifi Print</string>
+    <string name="discnt_inclsve">Incl:</string>
+    <string name="discnt_exclsve">Excl:</string>
+    <string name="title_activity_map_view">Map</string>
+    <string name="title_activity_delete">Map</string>
+    <string name="edit">Edit</string>
+    <string name="inr"> ₹</string>
+    <string-array name="shop_type">
+
+        <item>Retail</item>
+        <item>WholeSale</item>
+    </string-array>
+
+    <string-array name="cart_type">
+        <item>Cases</item>
+
+    </string-array>
+    <string-array name="discount_array">
+        <item>%</item>
+        <item>Amnt</item>
+
+    </string-array>
+
+    <string-array name="payment_type_array">
+        <item>Cash</item>
+        <item>Cheque</item>
+        <item>Bank</item>
+
+    </string-array>
+    <string-array name="payment_types_array">
+        <item>Cash</item>
+        <item>Cheque</item>
+        <item>Bank</item>
+    </string-array>
+
+</resources>

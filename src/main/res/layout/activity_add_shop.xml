@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/padding_xl"
+    android:paddingTop="@dimen/padding_4xxl"
+    android:paddingLeft="@dimen/padding_xl"
+    android:paddingRight="@dimen/padding_xl"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="com.advanced.minhas.activity.AddShopActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:contentPadding="@dimen/padding_m"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_xxl">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/text_xl"
+                        android:textColor="@color/colorBlack"
+                        android:text="Add New Shop"/>
+
+                </FrameLayout>
+
+                <include layout="@layout/item_divider_horizontal_gray"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="@dimen/padding_xxl"
+                    android:paddingLeft="@dimen/padding_xxl"
+                    android:orientation="vertical">
+
+                    <!--Group-->
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/textView_addNewShop_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/padding_xxl"
+                        android:gravity="center|start"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_l"
+                        android:paddingBottom="@dimen/padding_l"
+                        android:theme="@style/ViewTheme_Light"
+                        android:padding="@dimen/padding_m"
+                        android:textColor="@color/grayText"
+                        android:drawableStart="@drawable/ic_group_gray"
+                        android:drawablePadding="@dimen/padding_m"/>
+
+
+
+
+                    <include layout="@layout/item_divider_horizontal_gray"/>
+
+
+                    <!--Route-->
+
+                    <TextView
+                        android:id="@+id/textView_addNewShop_route"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/padding_xxl"
+                        android:gravity="center|start"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_l"
+                        android:paddingBottom="@dimen/padding_l"
+                        android:theme="@style/ViewTheme_Light"
+                        android:padding="@dimen/padding_m"
+                        android:textColor="@color/grayText"
+                        android:drawableStart="@drawable/ic_route_gray"
+                        android:drawablePadding="@dimen/padding_m"/>
+
+
+
+
+                    <include layout="@layout/item_divider_horizontal_gray"/>
+
+
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/spinner_addNewShop_division"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/spinner_height"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/padding_xxl"
+                        android:spinnerMode="dropdown"
+                        android:theme="@style/ViewTheme_dark"
+                        android:visibility="gone"/>
+
+
+
+                    <!--<include layout="@layout/item_divider_horizontal_gray"/>-->
+
+
+
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/spinner_addNewShop_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/spinner_height"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/padding_xxl"
+                        android:spinnerMode="dropdown"
+                        android:theme="@style/ViewTheme_dark"/>
+
+
+
+                    <include layout="@layout/item_divider_horizontal_gray"/>
+
+
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/spinner_addNewShop_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/spinner_height"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/padding_xxl"
+                        android:spinnerMode="dropdown"
+                        android:theme="@style/ViewTheme_dark"/>
+
+                    <include layout="@layout/item_divider_horizontal_gray"/>
+                    <!--shop-->
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_addNewShop_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/ViewTheme_Light"
+                        android:textColorHint="@color/textHint">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/editText_addNewShop_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_xxl"
+                            android:textColor="@color/grayText"
+                            android:textSize="@dimen/text_l"
+                            android:inputType="text"
+                            android:drawableStart="@drawable/ic_shop_gray"
+                            android:drawableEnd="@drawable/ic_required_red"
+                            android:drawablePadding="@dimen/padding_l"
+                            android:hint="@string/shop_name" />
+                    </android.support.design.widget.TextInputLayout>
+                    <!--Opening bal-->
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_addNewShop_openingbal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/ViewTheme_Light"
+                        android:textColorHint="@color/textHint">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/editText_addNewShop_openingbal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_xxl"
+                            android:textColor="@color/grayText"
+                            android:textSize="@dimen/text_l"
+                            android:inputType="numberDecimal"
+                            android:drawableStart="@drawable/ic_shop_gray"
+
+                            android:drawablePadding="@dimen/padding_l"
+                            android:hint="@string/openingbalance" />
+                    </android.support.design.widget.TextInputLayout>
+                    <!--Address-->
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_addNewShop_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/ViewTheme_Light"
+                        android:textColorHint="@color/textHint">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/editText_addNewShop_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_shop_gray"
+                            android:drawableEnd="@drawable/ic_required_red"
+                            android:drawablePadding="@dimen/padding_l"
+                            android:hint="@string/address"
+                            android:inputType="text"
+                            android:padding="@dimen/padding_xxl"
+                            android:textColor="@color/grayText"
+                            android:textSize="@dimen/text_l" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!--District-->
+
+                    <!--                        <android.support.design.widget.TextInputLayout-->
+                    <!--                            android:id="@+id/til_addNewShop_district"-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:theme="@style/ViewTheme_Light"-->
+                    <!--                            android:textColorHint="@color/textHint">-->
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/sp_addNewShop_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/spinner_height"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/padding_xxl"
+                        android:spinnerMode="dropdown"
+                        android:theme="@style/ViewTheme_dark"/>
+
+                    <include layout="@layout/item_divider_horizontal_gray"
+                        />
+                    <!--Pincode-->
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_addNewShop_pincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/ViewTheme_Light"
+                        android:textColorHint="@color/textHint"
+                        >
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/editText_addNewShop_pincode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_xxl"
+                            android:textColor="@color/grayText"
+                            android:textSize="@dimen/text_l"
+                            android:inputType="text"
+                            android:drawableStart="@drawable/ic_shop_gray"
+
+                            android:drawablePadding="@dimen/padding_l"
+                            android:hint="@string/pincode" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!--State-->
+
+
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/sp_addNewShop_district"
+                        android:visibility="gone"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/spinner_height"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/padding_xxl"
+                        android:spinnerMode="dropdown"
+                        android:theme="@style/ViewTheme_dark"/>
+
+                    <include layout="@layout/item_divider_horizontal_gray"
+                        android:visibility="gone"/>
+                    <!--Telephone-->
+                    <android.support.design.widget.TextInputLayout
+                        android:visibility="gone"
+                        android:id="@+id/til_addNewShop_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/ViewTheme_Light"
+                        android:textColorHint="@color/textHint">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/editText_addNewShop_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_xxl"
+                            android:textColor="@color/grayText"
+                            android:textSize="@dimen/text_l"
+                            android:inputType="numberDecimal"
+                            android:drawableStart="@drawable/ic_shop_gray"
+                            android:drawableEnd="@drawable/ic_required_red"
+                            android:drawablePadding="@dimen/padding_l"
+                            android:hint="@string/telephone" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!--Telephone-->
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_addNewShop_contact_person"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/ViewTheme_Light"
+                        android:textColorHint="@color/textHint">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/editText_addNewShop_contact_person"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_xxl"
+                            android:textColor="@color/grayText"
+                            android:textSize="@dimen/text_l"
+                            android:inputType="text"
+                            android:drawableStart="@drawable/ic_shop_gray"
+                            android:drawableEnd="@drawable/ic_required_red"
+                            android:drawablePadding="@dimen/padding_l"
+                            android:hint="@string/contact_person" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!--Contact No-->
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_addNewShop_contact_contactno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/ViewTheme_Light"
+                        android:textColorHint="@color/textHint">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/editText_addNewShop_contact_contactno"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_xxl"
+                            android:textColor="@color/grayText"
+                            android:textSize="@dimen/text_l"
+                            android:inputType="numberDecimal"
+                            android:drawableStart="@drawable/ic_shop_gray"
+                            android:drawableEnd="@drawable/ic_required_red"
+                            android:drawablePadding="@dimen/padding_l"
+                            android:hint="@string/contactno" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!--Credit limit-->
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_addNewShop_creditlimit"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/ViewTheme_Light"
+                        android:textColorHint="@color/textHint">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:visibility="gone"
+                            android:id="@+id/editText_addNewShop_creditlimit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_xxl"
+                            android:textColor="@color/grayText"
+                            android:textSize="@dimen/text_l"
+                            android:inputType="numberDecimal"
+                            android:drawableStart="@drawable/ic_shop_gray"
+                            android:drawableEnd="@drawable/ic_required_red"
+                            android:drawablePadding="@dimen/padding_l"
+                            android:hint="@string/creditlimit" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!--GST IN-->
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_addNewShop_contact_gstin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/ViewTheme_Light"
+                        android:textColorHint="@color/textHint">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/editText_addNewShop_contact_gstin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_xxl"
+                            android:textColor="@color/grayText"
+                            android:textSize="@dimen/text_l"
+                            android:inputType="text"
+                            android:drawableStart="@drawable/ic_shop_gray"
+
+                            android:drawablePadding="@dimen/padding_l"
+                            android:hint="@string/gstin" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!--GST IN-->
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_addNewShop_mail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/ViewTheme_Light"
+                        android:textColorHint="@color/textHint">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/editText_addNewShop_mail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_xxl"
+                            android:textColor="@color/grayText"
+                            android:textSize="@dimen/text_l"
+                            android:inputType="text"
+                            android:drawableStart="@drawable/ic_shop_gray"
+
+                            android:drawablePadding="@dimen/padding_l"
+                            android:hint="@string/email" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                    <!--arabic name-->
+
+                    <android.support.design.widget.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/ViewTheme_Light"
+                        android:textColorHint="@color/textHint"
+                        android:visibility="gone">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/editText_addNewShop_arabic_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_xxl"
+                            android:textColor="@color/grayText"
+                            android:textSize="@dimen/text_l"
+                            android:inputType="text"
+                            android:gravity="end"
+
+                            android:drawableStart="@drawable/ic_shop_gray"
+                            android:drawablePadding="@dimen/padding_l"
+                            android:hint="@string/shop__arab_name"
+                            android:drawableLeft="@drawable/ic_shop_gray"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!--TRN-->
+
+                    <android.support.design.widget.TextInputLayout
+                        android:visibility="gone"
+                        android:id="@+id/til_addNewShop_trnNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/ViewTheme_Light"
+                        android:textColorHint="@color/textHint">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/editText_addNewShop_TrnNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_xxl"
+                            android:textColor="@color/grayText"
+                            android:textSize="@dimen/text_l"
+                            android:inputType="text"
+                            android:drawableStart="@drawable/ic_label_black_24dp"
+                            android:drawablePadding="@dimen/padding_l"
+                            android:hint="@string/trn" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:orientation="horizontal"
+                        android:gravity="center|left">
+
+                        <CheckBox
+                            android:id="@+id/cb_gps"
+                            android:layout_marginStart="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Add Current location using gps">
+
+                        </CheckBox>
+
+                    </LinearLayout>
+
+
+
+
+                    <com.rey.material.widget.Button
+                        android:id="@+id/button_addNewShop_add"
+                        style="@style/Material.Drawable.Ripple.Wave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/button_height"
+                        android:background="@drawable/button_blue_round"
+                        android:layout_marginTop="@dimen/padding_xxl"
+                        android:layout_marginBottom="@dimen/padding_xxl"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorWhite"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_l"
+                        android:paddingLeft="@dimen/button_padding"
+                        android:paddingRight="@dimen/button_padding"
+                        android:text="@string/add"
+                        app:rd_enable="true"/>
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </FrameLayout>
+
+</android.support.v4.widget.NestedScrollView>

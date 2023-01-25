@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+
+    >
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorWhite"
+
+        >
+
+
+        <TextView
+            android:id="@+id/tv_size"
+            android:background="@color/colorWhite"
+            style="@style/TextViewBoldGrayStyle"
+            android:layout_weight="1"
+            android:text="Size"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_m"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_availableqty"
+            android:background="@color/colorWhite"
+            android:padding="5dp"
+            style="@style/TextViewBoldGrayStyle"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="1.3"
+            android:text="Available Qty"
+            android:textSize="@dimen/text_m" />
+
+
+        <ImageButton
+            android:layout_weight="0.5"
+            android:id="@+id/bt_minus"
+            android:layout_marginLeft="10dp"
+            style="@style/TextViewBoldGrayStyle"
+            android:background="@drawable/minus_btn"
+            />
+        <TextView
+            android:text="Qty"
+            android:id="@+id/tv_qty"
+            android:background="@color/colorWhite"
+            android:padding="5dp"
+            style="@style/TextViewBoldGrayStyle"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="1.3"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/text_m" />
+        <ImageButton
+            android:layout_weight="0.5"
+            android:id="@+id/bt_add"
+            style="@style/TextViewBoldGrayStyle"
+            android:background="@drawable/plusbutton"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

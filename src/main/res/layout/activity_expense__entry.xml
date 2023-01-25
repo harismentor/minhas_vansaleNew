@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.VanToWarehouse">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/button_sales_finish"
+        >
+
+
+        <!--custom toolbar-->
+        <LinearLayout
+            android:id="@+id/view_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/custom_toolbar_height"
+            android:background="@color/colorPrimary"
+            android:baselineAligned="false"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/toolbar_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/padding_m" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textview_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:padding="@dimen/padding_l"
+                android:text=""
+                android:textColor="@color/grayText"
+                android:textSize="@dimen/text_m"
+                android:textStyle="normal"
+                />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/padding_l"
+                android:text=""
+                android:textColor="@color/grayText"
+                android:textSize="@dimen/text_m"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="@dimen/padding_m"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewBoldGrayStyle"
+                    android:layout_weight="2"
+                    android:text="Expense Head"
+                    android:gravity="right|center_vertical"
+                    android:textSize="@dimen/text_m"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"/>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/padding_2xxl"
+                    android:layout_marginRight="@dimen/padding_2xxl"
+                    android:layout_marginTop="@dimen/padding_l"
+                    android:layout_marginBottom="@dimen/padding_l"
+                    android:layout_weight="4"
+                    android:minHeight="@dimen/spinner_height"
+                    android:background="@drawable/rectangle_grey_box">
+
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/spinner_expense"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:spinnerMode="dropdown"
+                        android:theme="@style/ViewTheme_dark" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/padding_m">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/edt_amount"
+                android:text="Amount"
+                android:layout_marginRight="@dimen/padding_4xxl"
+                android:layout_centerVertical="true"
+                android:visibility="gone"/>
+
+            <!--amount-->
+            <EditText
+                android:id="@+id/edt_amount"
+                android:layout_width="0dp"
+                android:layout_weight=".7"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/text_m"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:textColor="@color/grayText"
+                android:imeOptions="actionNext"
+                android:padding="@dimen/padding_m"
+                android:hint="0.00"
+                android:layout_marginLeft="@dimen/padding_l"
+                android:background="@drawable/rectangle_grey_box"
+                />
+
+            <EditText
+                android:id="@+id/edt_remarks"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_m"
+                android:singleLine="true"
+                android:layout_marginRight="10dp"
+                android:inputType="text"
+                android:textColor="@color/grayText"
+                android:imeOptions="actionDone"
+                android:padding="@dimen/padding_m"
+                android:hint="Remarks"
+                android:layout_marginLeft="@dimen/padding_l"
+                android:background="@drawable/rectangle_grey_box"
+                />
+
+            <LinearLayout
+                android:id="@+id/layout_button"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:gravity="center|right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/padding_m"
+                android:paddingRight="@dimen/padding_l">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <com.rey.material.widget.Button
+                        android:id="@+id/button_add"
+                        style="@style/Material.Drawable.Ripple.Wave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/cart_button_height"
+                        android:background="@drawable/rectangle_blue_box"
+                        android:drawableLeft="@drawable/ic_add_blue_24dp"
+                        android:drawablePadding="@dimen/padding_s"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Add"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/text_m"
+                        app:rd_enable="true" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorGrayLight"
+            android:layout_marginTop="@dimen/padding_l"
+            >
+
+            <TextView
+                android:id="@+id/textView_expense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="Expense"
+                android:layout_marginLeft="@dimen/padding_m"
+                android:layout_marginTop="@dimen/padding_l"
+                android:layout_marginBottom="@dimen/padding_l"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="@dimen/text_l"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:lines="1"
+                />
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Remarks"
+                android:layout_marginTop="@dimen/padding_l"
+                android:layout_marginBottom="@dimen/padding_l"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="@dimen/text_l"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:lines="1"/>
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:text="Amount "
+                android:layout_marginTop="@dimen/padding_l"
+                android:layout_marginBottom="@dimen/padding_l"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="@dimen/text_l"
+                android:gravity="right"
+                android:layout_centerVertical="true"
+                android:lines="1"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_l">
+
+
+            <!--invoice List-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:reverseLayout="false"
+                app:stackFromEnd="false"
+                android:background="@color/colorWhite"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,1190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.advanced.almahmasani.fragment.ShopDashBoardFragment"
+    tools:ignore="NestedWeights">
+
+    <include
+        layout="@layout/toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_toolbar_height" />
+
+<!--    <android.support.design.widget.CoordinatorLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@color/colorWhite"-->
+<!--        android:orientation="vertical">-->
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginBottom="@dimen/dash_board_padding"-->
+<!--            android:background="@color/colorWhite"-->
+<!--            android:orientation="vertical"-->
+<!--            android:paddingTop="@dimen/dash_board_padding">-->
+
+<!--            &lt;!&ndash;weight 1&ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginStart="@dimen/dash_board_padding"-->
+<!--                android:layout_marginEnd="@dimen/dash_board_padding"-->
+<!--                android:layout_weight="1">-->
+
+<!--                &lt;!&ndash;sales&ndash;&gt;-->
+<!--                <android.support.v7.widget.CardView-->
+<!--                    android:id="@+id/cardView_sales"-->
+
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:backgroundTint="@color/colorGreydashboard_bg"-->
+<!--                    android:clickable="true"-->
+<!--                    app:cardUseCompatPadding="false"-->
+<!--                    card_view:cardCornerRadius="@dimen/card_corner_radius">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:baselineAligned="false"-->
+<!--                        android:gravity="center"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="@dimen/dim_50"-->
+<!--                            android:layout_height="53dp"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:src="@drawable/icon_sales" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:lines="1"-->
+<!--                            android:text="@string/sales"-->
+<!--                            android:textColor="@color/colorBlack"-->
+<!--                            android:textSize="@dimen/text_xxl" />-->
+
+<!--                    </LinearLayout>-->
+
+<!--                </android.support.v7.widget.CardView>-->
+
+
+
+<!--                <android.support.v7.widget.CardView-->
+<!--                    android:id="@+id/cardView_quotation"-->
+
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginStart="@dimen/dash_board_padding"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:backgroundTint="@color/colorGreydashboard_bg"-->
+<!--                    android:clickable="true"-->
+<!--                    app:cardUseCompatPadding="false"-->
+<!--                    card_view:cardCornerRadius="@dimen/card_corner_radius">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="@dimen/dim_50"-->
+<!--                            android:layout_height="@dimen/dim_50"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:src="@drawable/icon_quotation" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:lines="1"-->
+<!--                            android:text="@string/quotation"-->
+<!--                            android:textColor="@color/colorBlack"-->
+<!--                            android:textSize="@dimen/text_xxl" />-->
+
+
+<!--                    </LinearLayout>-->
+
+
+<!--                </android.support.v7.widget.CardView>-->
+
+<!--            </LinearLayout>-->
+
+
+<!--            &lt;!&ndash;weight 2&ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginStart="@dimen/dash_board_padding"-->
+<!--                android:layout_marginTop="@dimen/dash_board_padding"-->
+<!--                android:layout_marginEnd="@dimen/dash_board_padding"-->
+<!--                android:layout_weight="1">-->
+
+
+<!--                &lt;!&ndash;salesReturn&ndash;&gt;-->
+
+<!--                <android.support.v7.widget.CardView-->
+<!--                    android:id="@+id/cardView_return"-->
+
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:backgroundTint="@color/colorGreydashboard_bg"-->
+<!--                    android:clickable="true"-->
+<!--                    app:cardUseCompatPadding="false"-->
+<!--                    card_view:cardCornerRadius="@dimen/card_corner_radius">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center"-->
+<!--                        android:orientation="vertical">-->
+
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="@dimen/dim_50"-->
+<!--                            android:layout_height="@dimen/dim_50"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:src="@drawable/icon_return" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:lines="1"-->
+<!--                            android:text="@string/sale_Return"-->
+<!--                            android:textColor="@color/colorBlack"-->
+<!--                            android:textSize="@dimen/text_xxl" />-->
+
+<!--                    </LinearLayout>-->
+
+<!--                </android.support.v7.widget.CardView>-->
+
+<!--                &lt;!&ndash;Receipt&ndash;&gt;-->
+
+<!--                <android.support.v7.widget.CardView-->
+<!--                    android:id="@+id/cardView_receipt"-->
+
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginStart="@dimen/dash_board_padding"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:backgroundTint="@color/colorGreydashboard_bg"-->
+<!--                    android:clickable="true"-->
+<!--                    app:cardUseCompatPadding="false"-->
+<!--                    card_view:cardCornerRadius="@dimen/card_corner_radius">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="@dimen/dim_50"-->
+<!--                            android:layout_height="@dimen/dim_50"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:src="@drawable/icon_receipt" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:lines="1"-->
+<!--                            android:text="@string/receipt"-->
+<!--                            android:textColor="@color/colorBlack"-->
+<!--                            android:textSize="@dimen/text_xxl" />-->
+
+
+<!--                    </LinearLayout>-->
+
+
+<!--                </android.support.v7.widget.CardView>-->
+
+<!--            </LinearLayout>-->
+
+<!--            &lt;!&ndash;weight 3&ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginStart="@dimen/dash_board_padding"-->
+<!--                android:layout_marginTop="@dimen/dash_board_padding"-->
+<!--                android:layout_marginEnd="@dimen/dash_board_padding"-->
+<!--                android:layout_weight="1">-->
+
+
+<!--                &lt;!&ndash;No Sale&ndash;&gt;-->
+
+<!--                <android.support.v7.widget.CardView-->
+
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:backgroundTint="@color/colorGreydashboard_bg"-->
+<!--                    android:clickable="true"-->
+<!--                    android:visibility="gone"-->
+<!--                    app:cardUseCompatPadding="false"-->
+<!--                    card_view:cardCornerRadius="@dimen/card_corner_radius">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center"-->
+<!--                        android:orientation="vertical">-->
+
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="@dimen/dim_50"-->
+<!--                            android:layout_height="@dimen/dim_50"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:src="@drawable/icon_nosale" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:lines="1"-->
+<!--                            android:text="No Sale"-->
+<!--                            android:textColor="@color/colorBlack"-->
+<!--                            android:textSize="@dimen/text_xxl" />-->
+<!--                    </LinearLayout>-->
+
+
+<!--                </android.support.v7.widget.CardView>-->
+
+
+<!--                &lt;!&ndash;location&ndash;&gt;-->
+
+<!--                &lt;!&ndash;            <android.support.v7.widget.CardView&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:visibility="invisible"&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:layout_width="0dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:layout_height="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:layout_gravity="center"&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:layout_weight="1"&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:clickable="true"&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:backgroundTint="@color/colorGreydashboard_bg"&ndash;&gt;-->
+<!--                &lt;!&ndash;                app:cardUseCompatPadding="false"&ndash;&gt;-->
+<!--                &lt;!&ndash;                card_view:cardCornerRadius="@dimen/card_corner_radius"&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:layout_marginStart="@dimen/dash_board_padding">&ndash;&gt;-->
+
+<!--                &lt;!&ndash;                <LinearLayout&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_height="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:orientation="vertical"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:gravity="center">&ndash;&gt;-->
+
+
+<!--                &lt;!&ndash;                        <ImageView&ndash;&gt;-->
+<!--                &lt;!&ndash;                            android:layout_width="@dimen/dim_50"&ndash;&gt;-->
+<!--                &lt;!&ndash;                            android:layout_height="@dimen/dim_50"&ndash;&gt;-->
+<!--                &lt;!&ndash;                            android:layout_gravity="center"&ndash;&gt;-->
+<!--                &lt;!&ndash;                            app:srcCompat="@drawable/icon_maps" />&ndash;&gt;-->
+
+<!--                &lt;!&ndash;                        <TextView&ndash;&gt;-->
+<!--                &lt;!&ndash;                            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--                &lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                &lt;!&ndash;                            android:layout_centerVertical="true"&ndash;&gt;-->
+<!--                &lt;!&ndash;                            android:lines="1"&ndash;&gt;-->
+<!--                &lt;!&ndash;                            android:text="Map View"&ndash;&gt;-->
+<!--                &lt;!&ndash;                            android:textColor="@color/colorBlack"&ndash;&gt;-->
+<!--                &lt;!&ndash;                            android:textSize="@dimen/text_xxl"&ndash;&gt;-->
+<!--                &lt;!&ndash;                            />&ndash;&gt;-->
+
+<!--                &lt;!&ndash;                </LinearLayout>&ndash;&gt;-->
+
+
+<!--                &lt;!&ndash;            </android.support.v7.widget.CardView>&ndash;&gt;-->
+
+<!--                <android.support.v7.widget.CardView-->
+<!--                    android:id="@+id/cardView_noSale"-->
+
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:backgroundTint="@color/colorGreydashboard_bg"-->
+<!--                    android:clickable="true"-->
+<!--                    app:cardUseCompatPadding="false"-->
+<!--                    card_view:cardCornerRadius="@dimen/card_corner_radius">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center"-->
+<!--                        android:orientation="vertical">-->
+
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="@dimen/dim_50"-->
+<!--                            android:layout_height="@dimen/dim_50"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            app:srcCompat="@drawable/icon_nosale" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:lines="1"-->
+<!--                            android:text="No Sale"-->
+<!--                            android:textColor="@color/colorBlack"-->
+<!--                            android:textSize="@dimen/text_xxl" />-->
+<!--                    </LinearLayout>-->
+
+
+<!--                </android.support.v7.widget.CardView>-->
+
+<!--                <android.support.v7.widget.CardView-->
+<!--                    android:id="@+id/cardView_mapView"-->
+
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginStart="@dimen/dash_board_padding"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:backgroundTint="@color/colorGreydashboard_bg"-->
+<!--                    android:clickable="true"-->
+<!--                    app:cardUseCompatPadding="false"-->
+<!--                    card_view:cardCornerRadius="@dimen/card_corner_radius">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="@dimen/dim_50"-->
+<!--                            android:layout_height="@dimen/dim_50"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:src="@drawable/icon_maps" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:lines="1"-->
+<!--                            android:text="Map View"-->
+<!--                            android:textColor="@color/colorBlack"-->
+<!--                            android:textSize="@dimen/text_xxl" />-->
+
+
+<!--                    </LinearLayout>-->
+
+
+<!--                </android.support.v7.widget.CardView>-->
+<!--            </LinearLayout>-->
+<!--            &lt;!&ndash;weight 3&ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginStart="@dimen/dash_board_padding"-->
+<!--                android:layout_marginTop="@dimen/dash_board_padding"-->
+<!--                android:layout_marginEnd="@dimen/dash_board_padding"-->
+<!--                android:layout_weight="1"-->
+<!--                android:visibility="gone">-->
+
+
+<!--                &lt;!&ndash;No Sale&ndash;&gt;-->
+
+<!--                <android.support.v7.widget.CardView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:backgroundTint="@color/colorGreydashboard_bg"-->
+<!--                    android:clickable="true"-->
+<!--                    android:visibility="gone"-->
+<!--                    app:cardUseCompatPadding="false"-->
+<!--                    card_view:cardCornerRadius="@dimen/card_corner_radius">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="@dimen/dim_50"-->
+<!--                            android:layout_height="@dimen/dim_50"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:src="@drawable/editcustomer" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:lines="1"-->
+<!--                            android:text="Edit Customer"-->
+<!--                            android:textColor="@color/colorBlack"-->
+<!--                            android:textSize="@dimen/text_xxl" />-->
+
+
+<!--                    </LinearLayout>-->
+
+
+<!--                </android.support.v7.widget.CardView>-->
+<!--                &lt;!&ndash;location&ndash;&gt;-->
+
+<!--                <android.support.v7.widget.CardView-->
+<!--                    android:id="@+id/cardView_mapVi"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginStart="@dimen/dash_board_padding"-->
+<!--                    android:layout_weight="1"-->
+
+<!--                    android:clickable="true"-->
+
+<!--                    app:cardUseCompatPadding="false">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center"-->
+<!--                        android:orientation="vertical">-->
+
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="@dimen/dim_50"-->
+<!--                            android:layout_height="@dimen/dim_50"-->
+<!--                            android:layout_gravity="center" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:lines="1"-->
+<!--                            android:text=""-->
+<!--                            android:textColor="@color/colorBlack"-->
+<!--                            android:textSize="@dimen/text_xxl" />-->
+
+<!--                    </LinearLayout>-->
+
+
+<!--                </android.support.v7.widget.CardView>-->
+
+<!--            </LinearLayout>-->
+
+
+<!--            &lt;!&ndash;weight 4&ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginStart="@dimen/dash_board_padding"-->
+<!--                android:layout_marginTop="@dimen/padding_add_new_shop_card"-->
+<!--                android:layout_marginEnd="@dimen/dash_board_padding"-->
+<!--                android:layout_weight=".5"-->
+<!--                android:gravity="center"-->
+<!--                android:paddingStart="@dimen/dash_board_padding"-->
+<!--                android:paddingEnd="@dimen/dash_board_padding">-->
+
+<!--                &lt;!&ndash;view&ndash;&gt;-->
+
+
+<!--                <android.support.v7.widget.CardView-->
+<!--                    android:id="@+id/cardView_viewMore"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:clickable="true"-->
+<!--                    android:foreground="?android:attr/selectableItemBackground"-->
+<!--                    android:visibility="gone"-->
+<!--                    app:cardUseCompatPadding="false"-->
+<!--                    card_view:cardCornerRadius="@dimen/card_corner_radius">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:baselineAligned="false"-->
+<!--                        android:weightSum="3">-->
+
+<!--                        <FrameLayout-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:background="@color/colorFinish">-->
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center"-->
+<!--                                app:srcCompat="@drawable/ic_finish_white_dash" />-->
+
+
+<!--                        </FrameLayout>-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_weight="2">-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_centerVertical="true"-->
+<!--                                android:layout_marginStart="@dimen/padding_xxl"-->
+<!--                                android:layout_marginLeft="@dimen/padding_xxl"-->
+<!--                                android:lines="1"-->
+<!--                                android:text="View more"-->
+<!--                                android:textColor="@color/colorFinish"-->
+<!--                                android:textSize="@dimen/text_dashBoard" />-->
+
+
+<!--                        </RelativeLayout>-->
+<!--                    </LinearLayout>-->
+
+
+<!--                </android.support.v7.widget.CardView>-->
+
+<!--                &lt;!&ndash;Finish&ndash;&gt;-->
+
+
+<!--                <android.support.v7.widget.CardView-->
+<!--                    android:id="@+id/cardView_finish"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:clickable="true"-->
+<!--                    android:padding="20dp"-->
+<!--                    app:cardUseCompatPadding="false"-->
+<!--                    card_view:cardCornerRadius="@dimen/card_corner_radius"-->
+
+<!--                    >-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="@drawable/rectangle_greenbox">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:layout_marginStart="@dimen/dashBoard_icon_badge_height"-->
+<!--                            android:layout_marginEnd="@dimen/dashBoard_icon_badge_height"-->
+<!--                            android:lines="1"-->
+<!--                            android:padding="10dp"-->
+<!--                            android:text="Finish"-->
+<!--                            android:textColor="@color/buttonGreen"-->
+<!--                            android:textSize="@dimen/text_dashBoard" />-->
+
+<!--                    </RelativeLayout>-->
+
+<!--                </android.support.v7.widget.CardView>-->
+
+
+<!--            </LinearLayout>-->
+
+
+<!--        </LinearLayout>-->
+
+
+
+<!--    </android.support.design.widget.CoordinatorLayout>-->
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorWhite">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:paddingTop="@dimen/dash_board_padding"
+                android:layout_marginBottom="@dimen/dash_board_padding">
+
+                <!--weight 1-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/dash_board_padding"
+                    android:layout_marginStart="@dimen/dash_board_padding"
+                    >
+
+                    <!--sales-->
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardView_sales"
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:backgroundTint="@color/colorGreydashboard_bg"
+                        app:cardUseCompatPadding="false"
+                        card_view:cardCornerRadius="@dimen/card_corner_radius">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:baselineAligned="false"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="@dimen/dim_50"
+                                android:layout_height="53dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/icon_sales" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:text="@string/sales"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/text_xxl" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--Quotation-->
+
+                    <!--                android:id="@+id/cardView_quotation"-->
+                    <android.support.v7.widget.CardView
+                        android:visibility="gone"
+                        android:id="@+id/cardView_quotation"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:backgroundTint="@color/colorGreydashboard_bg"
+                        app:cardUseCompatPadding="false"
+                        card_view:cardCornerRadius="@dimen/card_corner_radius">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+
+                            <ImageView
+                                android:layout_width="@dimen/dim_50"
+                                android:layout_height="@dimen/dim_50"
+                                android:layout_gravity="center"
+                                android:src="@drawable/icon_quotation" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:lines="1"
+                                android:text="@string/quotation"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/text_xxl" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardView_return"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:backgroundTint="@color/colorGreydashboard_bg"
+                        app:cardUseCompatPadding="false"
+                        card_view:cardCornerRadius="@dimen/card_corner_radius"
+                        android:layout_marginStart="@dimen/dash_board_padding">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="@dimen/dim_50"
+                                android:layout_height="@dimen/dim_50"
+                                android:layout_gravity="center"
+                                android:src="@drawable/icon_return" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:lines="1"
+                                android:text="@string/sale_Return"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/text_xxl" />
+
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+
+                <!--weight 2-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/dash_board_padding"
+                    android:layout_marginStart="@dimen/dash_board_padding"
+                    android:layout_marginTop="@dimen/dash_board_padding"  >
+
+
+                    <!--salesReturn-->
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardView_receipt"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:backgroundTint="@color/colorGreydashboard_bg"
+                        app:cardUseCompatPadding="false"
+                        card_view:cardCornerRadius="@dimen/card_corner_radius">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+
+                            <ImageView
+                                android:layout_width="@dimen/dim_50"
+                                android:layout_height="@dimen/dim_50"
+                                android:layout_gravity="center"
+                                android:src="@drawable/icon_receipt" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:lines="1"
+                                android:text="@string/receipt"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/text_xxl" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--Receipt-->
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardView_noSale"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:backgroundTint="@color/colorGreydashboard_bg"
+                        app:cardUseCompatPadding="false"
+                        card_view:cardCornerRadius="@dimen/card_corner_radius"
+                        android:layout_marginStart="@dimen/dash_board_padding">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="@dimen/dim_50"
+                                android:layout_height="@dimen/dim_50"
+                                android:layout_gravity="center"
+                                android:src="@drawable/icon_nosale" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:lines="1"
+                                android:text="No Sale"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/text_xxl" />
+
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <!--weight 3-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/dash_board_padding"
+                    android:layout_marginStart="@dimen/dash_board_padding"
+                    android:layout_marginTop="@dimen/dash_board_padding"
+                    >
+
+
+
+                    <!--No Sale-->
+
+                    <android.support.v7.widget.CardView
+
+                        android:visibility="gone"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:backgroundTint="@color/colorGreydashboard_bg"
+                        app:cardUseCompatPadding="false"
+                        card_view:cardCornerRadius="@dimen/card_corner_radius">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+
+
+
+                            <ImageView
+                                android:layout_width="@dimen/dim_50"
+                                android:layout_height="@dimen/dim_50"
+                                android:layout_gravity="center"
+                                android:src="@drawable/icon_nosale" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:lines="1"
+                                android:text="No Sale"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/text_xxl" />
+                        </LinearLayout>
+
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                    <!--location-->
+
+                    <!--            <android.support.v7.widget.CardView-->
+                    <!--                android:visibility="invisible"-->
+                    <!--                android:layout_width="0dp"-->
+                    <!--                android:layout_height="match_parent"-->
+                    <!--                android:layout_gravity="center"-->
+                    <!--                android:layout_weight="1"-->
+                    <!--                android:clickable="true"-->
+                    <!--                android:backgroundTint="@color/colorGreydashboard_bg"-->
+                    <!--                app:cardUseCompatPadding="false"-->
+                    <!--                card_view:cardCornerRadius="@dimen/card_corner_radius"-->
+                    <!--                android:layout_marginStart="@dimen/dash_board_padding">-->
+
+                    <!--                <LinearLayout-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="match_parent"-->
+                    <!--                    android:orientation="vertical"-->
+                    <!--                    android:gravity="center">-->
+
+
+                    <!--                        <ImageView-->
+                    <!--                            android:layout_width="@dimen/dim_50"-->
+                    <!--                            android:layout_height="@dimen/dim_50"-->
+                    <!--                            android:layout_gravity="center"-->
+                    <!--                            app:srcCompat="@drawable/icon_maps" />-->
+
+                    <!--                        <TextView-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_centerVertical="true"-->
+                    <!--                            android:lines="1"-->
+                    <!--                            android:text="Map View"-->
+                    <!--                            android:textColor="@color/colorBlack"-->
+                    <!--                            android:textSize="@dimen/text_xxl"-->
+                    <!--                            />-->
+
+                    <!--                </LinearLayout>-->
+
+
+                    <!--            </android.support.v7.widget.CardView>-->
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardView_mapView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:backgroundTint="@color/colorGreydashboard_bg"
+                        app:cardUseCompatPadding="false"
+                        card_view:cardCornerRadius="@dimen/card_corner_radius"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+
+                            <ImageView
+                                android:layout_width="@dimen/dim_50"
+                                android:layout_height="@dimen/dim_50"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/icon_maps" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:lines="1"
+                                android:text="Map View"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/text_xxl"
+                                />
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+                <!--weight 3-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/dash_board_padding"
+                    android:layout_marginStart="@dimen/dash_board_padding"
+                    android:layout_marginTop="@dimen/dash_board_padding"
+                    android:visibility="gone">
+
+
+
+                    <!--No Sale-->
+
+                    <android.support.v7.widget.CardView
+                        android:visibility="gone"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:backgroundTint="@color/colorGreydashboard_bg"
+                        app:cardUseCompatPadding="false"
+                        card_view:cardCornerRadius="@dimen/card_corner_radius">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="@dimen/dim_50"
+                                android:layout_height="@dimen/dim_50"
+                                android:layout_gravity="center"
+                                android:src="@drawable/editcustomer" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:lines="1"
+                                android:text="Edit Customer"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/text_xxl" />
+
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+                    <!--location-->
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardView_mapVi"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="true"
+
+                        app:cardUseCompatPadding="false"
+
+                        android:layout_marginStart="@dimen/dash_board_padding"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+
+                            <ImageView
+                                android:layout_width="@dimen/dim_50"
+                                android:layout_height="@dimen/dim_50"
+                                android:layout_gravity="center"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:lines="1"
+                                android:text=""
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/text_xxl"
+                                />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+
+                <!--weight 4-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:paddingEnd="@dimen/dash_board_padding"
+                    android:paddingStart="@dimen/dash_board_padding"
+                    android:layout_marginEnd="@dimen/dash_board_padding"
+                    android:layout_marginStart="@dimen/dash_board_padding"
+                    android:layout_marginTop="@dimen/padding_add_new_shop_card"
+                    android:gravity="center">
+
+                    <!--view-->
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardView_viewMore"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardUseCompatPadding="false"
+                        card_view:cardCornerRadius="@dimen/card_corner_radius"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:baselineAligned="false"
+                            android:weightSum="3">
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/colorFinish">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/ic_finish_white_dash" />
+
+
+                            </FrameLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/padding_xxl"
+                                    android:lines="1"
+                                    android:text="View more"
+                                    android:textColor="@color/colorFinish"
+                                    android:textSize="@dimen/text_dashBoard"
+                                    android:layout_marginLeft="@dimen/padding_xxl" />
+
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--Finish-->
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardView_finish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:clickable="true"
+                        app:cardUseCompatPadding="false"
+                        android:padding="20dp"
+                        card_view:cardCornerRadius="@dimen/card_corner_radius"
+
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rectangle_greenbox"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/dashBoard_icon_badge_height"
+                                android:layout_marginEnd="@dimen/dashBoard_icon_badge_height"
+                                android:lines="1"
+                                android:text="Finish"
+                                android:padding="10dp"
+                                android:textColor="@color/buttonGreen"
+                                android:textSize="@dimen/text_dashBoard" />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+
+</LinearLayout>

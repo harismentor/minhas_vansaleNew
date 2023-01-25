@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="9">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            >
+                                <TextView
+                                    android:id="@+id/tv_slno"
+                                    style="@style/TableHeaderTheme"
+                                    android:layout_width="50dp"
+                                    android:text="@string/sl_no"></TextView>
+                                <TextView
+                                    android:id="@+id/tv_invoiceno"
+                                    style="@style/TableHeaderTheme"
+                                    android:layout_width="80dp"
+                                    ></TextView>
+                                <TextView
+                                    android:id="@+id/tv_accname"
+                                    style="@style/TableHeaderTheme"
+                                    android:layout_width="250dp"
+                                    android:text="@string/category"></TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_sumofqty"
+
+                                    style="@style/TableHeaderTheme"
+                                    android:layout_width="100dp"
+                                    android:text="@string/sumofqnty"></TextView>
+                                <TextView
+                                    android:id="@+id/tv_sumofvalue"
+                                    style="@style/TableHeaderTheme"
+                                    android:layout_width="100dp"
+                                    android:text="@string/sumofvalue"></TextView>
+                                <TextView
+                                    android:id="@+id/tv_tax"
+                                    android:layout_width="100dp"
+                                    style="@style/TableHeaderTheme"
+                                    android:text="@string/tax"></TextView>
+                                <TextView
+                                    android:id="@+id/tv_grossvalue"
+                                    android:layout_width="150dp"
+                                    style="@style/TableHeaderTheme"
+                                    android:text="@string/grossvalue"></TextView>
+
+                        </TableRow>
+
+                </TableLayout>
+
+
+        </LinearLayout>
+
+</LinearLayout>

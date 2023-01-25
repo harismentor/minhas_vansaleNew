@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:padding="@dimen/padding_l">
+
+        <TextView
+            android:id="@+id/tv_paymentDialog_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_xl"
+            android:text="PAYMENT"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="@dimen/padding_xl"
+            android:textSize="@dimen/text_l"/>
+
+
+        <TextView
+            android:id="@+id/textView_paymentDialog_date"
+            android:layout_below="@+id/tv_paymentDialog_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_xl"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="@dimen/padding_xl"
+            android:textSize="@dimen/text_l"/>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_paymentDialog_Total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/relative_lyt_1"
+            android:padding="@dimen/padding_l"
+            android:text="TOTAL"
+            android:textColor="@color/colorWhite"
+            android:layout_marginRight="@dimen/padding_xl"
+            android:textSize="@dimen/text_l"/>
+
+
+
+
+
+        <TextView
+            android:layout_toLeftOf="@+id/relative_lyt_1"
+            android:layout_below="@+id/tv_paymentDialog_Total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_l"
+            android:text="BALANCE"
+            android:textColor="@color/colorWhite"
+            android:layout_marginRight="@dimen/padding_xl"
+            android:textSize="@dimen/text_l"/>
+
+
+        <RelativeLayout
+            android:id="@+id/relative_lyt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/padding_xxl"
+            android:layout_alignParentRight="true">
+
+
+            <TextView
+                android:id="@+id/textView_paymentDialog_TotalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_l"
+                android:textColor="@color/colorWhite"
+                android:layout_marginRight="@dimen/padding_xl"
+                android:textSize="@dimen/text_l"/>
+
+
+            <TextView
+                android:id="@+id/textView_paymentDialog_BalanceAmount"
+                android:layout_below="@+id/textView_paymentDialog_TotalAmount"
+                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_l"
+                android:textColor="@color/colorWhite"
+                android:layout_marginRight="@dimen/padding_xl"
+                android:textSize="@dimen/text_l"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_xxl">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="left"
+            android:textSize="@dimen/text_m"
+            android:text="PAID AMOUNT"
+            android:textColor="@color/grayText"
+            android:padding="@dimen/padding_l"
+            android:layout_marginLeft="@dimen/padding_xxl"/>
+
+
+<FrameLayout
+    android:layout_width="@dimen/layout_width"
+    android:layout_height="match_parent"
+    android:background="@color/bg_ivory"
+    android:padding="@dimen/padding_l"
+    android:layout_gravity="right"
+    android:layout_marginRight="@dimen/padding_xxl">
+        <EditText
+            android:id="@+id/editText_paymentDialog_paidAmount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/text_l"
+            android:inputType="numberDecimal"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/textHint"/>
+
+</FrameLayout>
+    </FrameLayout>
+
+
+
+    <include layout="@layout/item_divider_horizontal_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:orientation="horizontal"
+        >
+
+        <com.rey.material.widget.Button
+            android:id="@+id/button_paymentDialog_cancel"
+            style="@style/Material.Drawable.Ripple.Wave"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_toolbar_height"
+            android:background="@color/colorTransparent"
+            android:layout_margin="@dimen/layout_margin"
+            android:layout_gravity="center"
+            android:textColor="@color/grayText"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_l"
+            android:paddingLeft="@dimen/button_padding"
+            android:paddingRight="@dimen/button_padding"
+            android:text="CANCEL"
+            app:rd_enable="true"/>
+
+
+        <com.rey.material.widget.Button
+            android:id="@+id/button_paymentDialog_ok"
+            style="@style/Material.Drawable.Ripple.Wave"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_toolbar_height"
+            android:background="@color/colorTransparent"
+            android:layout_margin="@dimen/layout_margin"
+            android:layout_gravity="center"
+            android:textColor="@color/grayText"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_l"
+            android:paddingLeft="@dimen/button_padding"
+            android:paddingRight="@dimen/button_padding"
+            android:text="OK"
+            app:rd_enable="true"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

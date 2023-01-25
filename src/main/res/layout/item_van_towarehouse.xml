@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/padding_l"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/padding_xl"
+            android:layout_marginBottom="@dimen/padding_xl"
+            >
+
+            <TextView
+                android:id="@+id/textView_productname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="Code"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="@dimen/text_l"
+                android:layout_centerVertical="true"
+                android:gravity="left"
+                android:lines="1"
+                />
+
+            <TextView
+                android:id="@+id/textView_item_stock"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:text="hghjg"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="@dimen/text_l"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:lines="1"/>
+
+            <EditText
+                android:id="@+id/edittext_movement_qty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:inputType="numberDecimal"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="@dimen/text_l"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:lines="1"/>
+
+            <!--        <LinearLayout-->
+            <!--            android:layout_width="0dp"-->
+            <!--            android:layout_height="25dp"-->
+            <!--            android:layout_weight=".5"-->
+            <!--            android:gravity="center"-->
+            <!--            android:orientation="horizontal">-->
+            <!--            &lt;!&ndash;Delete Button&ndash;&gt;-->
+            <!--            <ImageButton-->
+            <!--                android:id="@+id/imageButton_item_cart_delete"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:background="@color/colorTransparent"-->
+            <!--                android:src="@drawable/ic_delete_red"-->
+            <!--                android:layout_marginStart="@dimen/padding_m"/>-->
+
+            <!--        </LinearLayout>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

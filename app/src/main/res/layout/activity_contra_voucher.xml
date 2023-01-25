@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ContraVoucher">
+
+    <!--head bar-->
+    <LinearLayout
+        android:id="@+id/head_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_toolbar_height"
+        android:background="@color/colorPrimary"
+        android:baselineAligned="false"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+
+        <include
+            layout="@layout/toolbar_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:paddingTop="@dimen/padding_m" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/head_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorWhite">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorWhite">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/text_xl"
+                android:layout_marginTop="@dimen/layout_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash in hand   :  "
+                android:layout_toLeftOf="@+id/text_cashinhand"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_green"
+                android:textSize="@dimen/text_xl"
+              />
+
+                <TextView
+                    android:id="@+id/text_cashinhand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorGrayMedium"
+                    android:textSize="@dimen/text_xxl" />
+
+            </RelativeLayout>
+
+      <!--  Left Layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--  Date  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_xl"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_xl">
+
+
+            <TextView
+                style="@style/TextViewBoldGrayStyle"
+                android:layout_weight="2"
+                android:text="Date"
+                android:textSize="@dimen/text_m" />
+
+            <TextView
+                android:id="@+id/textView_contradate"
+                style="@style/EditTextReceiptStyle"
+                android:layout_marginLeft="@dimen/padding_2xxl"
+                android:layout_marginRight="@dimen/padding_2xxl"
+                android:layout_weight="3"
+                android:background="@drawable/rectangle_input"
+                android:drawableEnd="@drawable/ic_date_picker"
+                android:drawablePadding="@dimen/padding_xxl"
+                android:drawableRight="@drawable/ic_date_picker"
+                android:gravity="start|center"
+                android:textColor="@color/grayText" />
+
+        </LinearLayout>
+
+
+        <!--From bank-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_xl"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_xl"
+            android:visibility="gone">
+
+
+            <TextView
+                style="@style/TextViewBoldGrayStyle"
+                android:layout_weight="2"
+                android:text="From Account"
+                android:textSize="@dimen/text_m" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/padding_2xxl"
+                android:layout_marginRight="@dimen/padding_2xxl"
+                android:layout_weight="3"
+                android:background="@drawable/rect_text_view_disable"
+                android:minHeight="@dimen/spinner_height">
+
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spinner_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:spinnerMode="dropdown"
+                    android:theme="@style/ViewTheme_dark" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+       <!-- Right layout-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_xl"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_xl">
+
+                <TextView
+                    style="@style/TextViewBoldGrayStyle"
+                    android:layout_weight="2"
+                    android:text="External Voucher"
+                    android:textSize="@dimen/text_m" />
+
+                <EditText
+                    android:id="@+id/editText_externalvoucher"
+                    style="@style/EditTextReceiptStyle"
+                    android:layout_marginLeft="@dimen/padding_2xxl"
+                    android:layout_marginRight="@dimen/padding_2xxl"
+                    android:layout_weight="3"
+                    android:paddingRight="@dimen/padding_m"
+                    android:background="@drawable/rectangle_input"
+                    android:gravity="end|center"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/textView_balance"
+                    style="@style/EditTextReceiptStyle"
+                    android:layout_marginLeft="@dimen/padding_2xxl"
+                    android:layout_marginRight="@dimen/padding_2xxl"
+                    android:layout_width="match_parent"
+                    android:text="Balance : 27000"
+                    android:drawablePadding="@dimen/padding_xxl"
+                    android:gravity="right|center"
+                    android:textColor="@color/text_green"
+                    android:textSize="@dimen/text_xxl"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+            <!--From bank-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/padding_xl"
+                android:padding="@dimen/padding_xl">
+
+                <TextView
+                    style="@style/TextViewBoldGrayStyle"
+                    android:layout_weight="2"
+                    android:text="To Account"
+                    android:textSize="@dimen/text_m" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/padding_2xxl"
+                    android:layout_marginRight="@dimen/padding_2xxl"
+                    android:layout_weight="3"
+                    android:background="@drawable/rect_text_view_disable"
+                    android:minHeight="@dimen/spinner_height">
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/spinner_to"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:spinnerMode="dropdown"
+                        android:theme="@style/ViewTheme_dark"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <!--Amount Paid-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_l"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_xl">
+
+                <TextView
+                    style="@style/TextViewBoldGrayStyle"
+                    android:layout_weight="2"
+                    android:text="Amount"
+                    android:textSize="@dimen/text_m" />
+
+
+                <EditText
+                    android:id="@+id/editText_contraPaid"
+                    style="@style/EditTextReceiptStyle"
+                    android:layout_marginLeft="@dimen/padding_2xxl"
+                    android:layout_marginRight="@dimen/padding_2xxl"
+                    android:layout_weight="3"
+                    android:background="@drawable/rectangle_input"
+                    android:gravity="end|center"
+                    android:paddingRight="@dimen/padding_xl"
+                    android:inputType="numberDecimal"/>
+
+            </LinearLayout>
+
+            <!--Remarks -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_l"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_xl">
+
+                <TextView
+                    style="@style/TextViewBoldGrayStyle"
+                    android:layout_weight="2"
+                    android:text="Remarks"
+                    android:textSize="@dimen/text_m" />
+
+                <EditText
+                    android:id="@+id/editText_remarks"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="@dimen/padding_2xxl"
+                    android:paddingRight="@dimen/padding_m"
+                    android:layout_marginRight="@dimen/padding_2xxl"
+                    android:layout_weight="3"
+                    android:background="@drawable/rectangle_input"
+                    android:gravity="start"
+                    android:padding="@dimen/padding_l"
+                    android:inputType="textMultiLine" />
+
+            </LinearLayout>
+
+
+            <com.rey.material.widget.Button
+                android:id="@+id/button_contra_submit"
+                style="@style/Material.Drawable.Ripple.Wave"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:text="Submit Contra"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_m"
+                app:rd_enable="true"
+                android:layout_marginTop="@dimen/padding_xxl"
+                android:background="@drawable/button_green_rect"
+                android:paddingLeft="@dimen/padding_xl"
+                android:paddingRight="@dimen/padding_xl"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/padding_2xxl"
+                android:layout_marginEnd="@dimen/padding_2xxl"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="@dimen/padding_xxl"/>
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

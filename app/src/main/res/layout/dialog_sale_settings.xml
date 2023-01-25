@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_l">
+
+
+        <TextView
+            android:id="@+id/textView_dayRegister_Dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/padding_xl"
+            android:layout_marginLeft="@dimen/padding_xl"
+            android:paddingStart="@dimen/padding_l"
+            android:paddingEnd="@dimen/padding_l"
+            android:text="Sale Settings"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_xl"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textView_dayRegister_Dialog_executiveName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/padding_xl"
+            android:layout_marginLeft="@dimen/padding_xl"
+            android:gravity="end"
+            android:padding="@dimen/padding_m"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_l" />
+
+
+        <TextView
+            android:id="@+id/textView_dayRegister_Dialog_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/padding_xl"
+            android:layout_marginLeft="@dimen/padding_xl"
+            android:gravity="start"
+            android:padding="@dimen/padding_m"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_m" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_xxl"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_marginEnd="@dimen/padding_xxl"
+            android:layout_marginRight="@dimen/padding_xxl"
+            android:minWidth="@dimen/layout_width"
+            android:padding="@dimen/padding_l"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/editText_dayRegister_Dialog_vehicleno"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/kilometer_input"
+                android:gravity="center"
+                android:hint="Enter Vehicle  Number"
+                android:inputType="text"
+                android:padding="@dimen/padding_l"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/textHint"
+                android:textSize="@dimen/text_l" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginStart="@dimen/padding_xxl"
+            android:layout_marginLeft="@dimen/padding_xxl"
+            android:gravity="center"
+            android:padding="@dimen/padding_l"
+            android:text="     "
+            android:textColor="@color/grayText"
+            android:textSize="@dimen/text_m" />
+
+
+    </LinearLayout>
+
+    <RadioGroup
+
+        android:id="@+id/radioGroup_dayRegister_Dialog_vatType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="@dimen/padding_xxl"
+        android:layout_marginLeft="@dimen/padding_l"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_noVat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_4xxl"
+            android:layout_marginLeft="@dimen/padding_l"
+            android:text="No Vat"
+            android:checked="true"
+            android:textColor="@color/grayText"
+            android:textSize="@dimen/text_m" />
+
+        <RadioButton
+            android:layout_marginLeft="@dimen/padding_4xxl"
+            android:id="@+id/radioButton_vat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Vat"
+            android:textColor="@color/grayText"
+            android:textSize="@dimen/text_m" />
+
+
+
+
+    </RadioGroup>
+    <include layout="@layout/item_divider_horizontal_dark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:orientation="horizontal"
+        >
+
+        <com.rey.material.widget.Button
+            android:id="@+id/button_Settings_Dialog_cancel"
+            style="@style/Material.Drawable.Ripple.Wave"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_toolbar_height"
+            android:background="@color/colorTransparent"
+            android:layout_margin="@dimen/padding_xl"
+            android:layout_gravity="center"
+            android:textColor="@color/grayText"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_l"
+            android:paddingLeft="@dimen/button_padding"
+            android:paddingRight="@dimen/button_padding"
+            android:text="CANCEL"
+            app:rd_enable="true"/>
+
+
+        <com.rey.material.widget.Button
+            android:id="@+id/button_Settings_Dialog_ok"
+            style="@style/Material.Drawable.Ripple.Wave"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_toolbar_height"
+            android:background="@color/colorTransparent"
+            android:layout_margin="@dimen/padding_xl"
+            android:layout_gravity="center"
+            android:textColor="@color/grayText"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_l"
+            android:paddingLeft="@dimen/button_padding"
+            android:paddingRight="@dimen/button_padding"
+            android:text="OK"
+            app:rd_enable="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

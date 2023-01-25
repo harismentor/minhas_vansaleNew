@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.VanToWarehouse">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+
+        <!--custom toolbar-->
+        <LinearLayout
+            android:id="@+id/view_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/custom_toolbar_height"
+            android:background="@color/colorPrimary"
+            android:baselineAligned="false"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/toolbar_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/padding_m" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textview_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:padding="@dimen/padding_l"
+                android:text=""
+                android:textColor="@color/grayText"
+                android:textSize="@dimen/text_m"
+                android:textStyle="normal"
+                />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/padding_l"
+                android:text=""
+                android:textColor="@color/grayText"
+                android:textSize="@dimen/text_m"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorWhite"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/ly_warehouse">
+
+                    <TextView
+                        style="@style/TextViewBoldGrayStyle"
+                        android:layout_weight="2"
+                        android:text="Ware House"
+                        android:gravity="right|center_vertical"
+                        android:textSize="@dimen/text_m"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"/>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/padding_2xxl"
+                        android:layout_marginRight="@dimen/padding_2xxl"
+                        android:layout_marginTop="@dimen/padding_l"
+                        android:layout_marginBottom="@dimen/padding_l"
+                        android:layout_weight="4"
+                        android:minHeight="@dimen/spinner_height"
+                        android:background="@drawable/rectangle_grey_box">
+
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spinner_warehouse"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:spinnerMode="dropdown"
+                            android:theme="@style/ViewTheme_dark" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextViewBoldGrayStyle"
+                        android:layout_weight="2"
+                        android:text="Stock Type"
+                        android:gravity="right|center_vertical"
+                        android:textSize="@dimen/text_m"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"/>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/padding_2xxl"
+                        android:layout_marginRight="@dimen/padding_2xxl"
+                        android:layout_marginTop="@dimen/padding_l"
+                        android:layout_marginBottom="@dimen/padding_l"
+                        android:layout_weight="4"
+                        android:minHeight="@dimen/spinner_height"
+                        android:background="@drawable/rectangle_grey_box">
+
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spinner_stocktype"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:spinnerMode="dropdown"
+                            android:theme="@style/ViewTheme_dark" />
+
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--            <SearchView
+                               android:id="@+id/searchView_collectionReport_customer"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_alignParentEnd="true"
+                               android:layout_alignParentRight="true"
+                               android:layout_centerVertical="true"
+                               android:layout_marginEnd="@dimen/padding_xl"
+                               android:layout_marginRight="@dimen/padding_xl"
+                               android:focusable="false"
+                               android:iconifiedByDefault="false"
+                               android:minHeight="@dimen/SearchableSpinner_height"
+                               android:queryHint="Search Customer"
+                               android:theme="@style/SearchViewTheme_light" />-->
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/item_divider_horizontal_dark"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:padding="@dimen/padding_m"
+                        android:layout_marginStart="@dimen/padding_l"
+                        android:text="@string/name"
+                        android:gravity="left|center"
+                        android:textSize="@dimen/text_m"
+                        android:textColor="@color/grayText"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.5"
+                        android:padding="@dimen/padding_m"
+                        android:text="Stock"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_m"
+                        android:textColor="@color/grayText"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.5"
+                        style="@style/TextViewTableColStyle"
+                        android:text="@string/qty"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <!--product-->
+
+                    <TextView
+                        android:id="@+id/textView_sales_item"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/SearchableSpinner_height"
+                        android:layout_weight="5"
+                        android:hint="@string/product"
+                        style="@style/TextViewTableColStyle"
+                        android:singleLine="true"
+                        android:gravity="left|center"
+                        android:paddingLeft="@dimen/padding_m"
+                        android:background="@drawable/bottom_line_bg"
+                        android:drawableEnd="@drawable/ic_arrow_drop_down_gray"
+                        android:drawablePadding="@dimen/padding_m"
+                        android:layout_margin="@dimen/padding_l"/>
+
+                    <!--unit dropDown-->
+
+                    <TextView
+                        android:id="@+id/tv_stock"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.5"
+                        android:gravity="center"
+                        android:background="@drawable/rectangle_grey_box"
+                        android:layout_margin="@dimen/padding_l"/>
+
+                    <!--Quantity-->
+                    <EditText
+                        android:id="@+id/EditText_sales_Qty"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.5"
+                        android:layout_gravity="left|center"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_m"
+                        android:singleLine="true"
+                        android:inputType="number"
+                        android:textColor="@color/grayText"
+                        android:imeOptions="actionDone"
+                        android:padding="@dimen/padding_m"
+                        android:background="@drawable/rectangle_grey_box"
+                        android:layout_margin="@dimen/padding_s"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_marginTop="@dimen/padding_m"
+                    android:paddingRight="@dimen/padding_l">
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        >
+
+                        <com.rey.material.widget.Button
+                            android:id="@+id/button_sales_addCart"
+                            style="@style/Material.Drawable.Ripple.Wave"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/cart_button_height"
+                            android:background="@drawable/rectangle_blue_box"
+                            android:drawableLeft="@drawable/ic_add_blue_24dp"
+                            android:drawablePadding="@dimen/padding_s"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="Add"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/text_m"
+                            app:rd_enable="true" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorGrayLight"
+            android:layout_marginTop="@dimen/padding_m"
+            >
+
+            <TextView
+                android:id="@+id/textView_productname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="Product"
+                android:layout_marginLeft="@dimen/padding_m"
+                android:layout_marginTop="@dimen/padding_l"
+                android:layout_marginBottom="@dimen/padding_l"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="@dimen/text_l"
+                android:layout_centerVertical="true"
+                android:gravity="left"
+                android:lines="1"
+                />
+
+            <TextView
+                android:id="@+id/textView_item_stock"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:text="Stock Qty"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="@dimen/text_l"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/padding_l"
+                android:layout_marginBottom="@dimen/padding_l"
+                android:layout_centerVertical="true"
+                android:lines="1"/>
+
+            <TextView
+                android:id="@+id/textView_movement_qty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:text="Transfer Qty"
+                android:layout_marginTop="@dimen/padding_l"
+                android:layout_marginBottom="@dimen/padding_l"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="@dimen/text_l"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:lines="1"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_l">
+
+            <!--Error View with progressbar-->
+            <include
+                android:id="@+id/product_vanStock"
+                layout="@layout/progress_recyclerview" />
+
+            <RelativeLayout
+                android:id="@+id/layout_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--invoice List-->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:reverseLayout="false"
+                    app:stackFromEnd="false"
+                    android:background="@color/colorWhite"
+                    android:layout_marginBottom="100dp"
+                    />
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/below_btns"
+
+
+
+
+                    >
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:text="Total Qty :"
+                        android:id="@+id/tv_totalqty"
+                        android:paddingLeft="@dimen/button_padding"
+                        android:paddingRight="@dimen/button_padding"
+                        android:layout_marginTop="@dimen/padding_m"
+                        android:layout_marginBottom="@dimen/padding_xl"
+                        android:gravity="right"/>
+
+                    <com.rey.material.widget.Button
+                        android:id="@+id/button_sales_finish"
+                        style="@style/Material.Drawable.Ripple.Wave"
+                        android:layout_marginStart="@dimen/padding_xl"
+                        android:layout_marginEnd="@dimen/padding_xl"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:background="@drawable/rectangle_greenbox"
+                        android:layout_marginTop="@dimen/padding_m"
+                        android:layout_marginBottom="@dimen/padding_xl"
+                        android:layout_gravity="start|center"
+                        android:textColor="@color/buttonGreen"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_m"
+                        android:paddingLeft="@dimen/button_padding"
+                        android:paddingRight="@dimen/button_padding"
+                        android:text="@string/finish"
+                        app:rd_enable="true"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

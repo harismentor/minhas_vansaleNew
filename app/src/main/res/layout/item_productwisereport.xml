@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txt_slno"
+        style="@style/TableItemTheme"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+
+        android:gravity="left"
+        android:ellipsize="end"
+         />
+
+    <TextView
+        android:id="@+id/txt_category"
+        style="@style/TableItemTheme"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+
+        android:gravity="left"
+        android:ellipsize="end"
+        />
+    <TextView
+        android:id="@+id/txt_item"
+        style="@style/TableItemTheme"
+        android:layout_width="@dimen/dim_150"
+        android:layout_height="45dp"
+
+        android:gravity="left"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:id="@+id/txt_sumof_qty"
+        style="@style/TableItemTheme"
+        android:layout_width="@dimen/dim_100"
+        android:layout_height="45dp"
+
+        android:gravity="left"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:id="@+id/txt_sumofvalue"
+        android:layout_width="100dp"
+        style="@style/TableItemTheme"
+        android:layout_height="45dp"
+
+        android:gravity="left"
+        android:ellipsize="end"
+         />
+
+    <TextView
+        android:id="@+id/txt_tax"
+        android:layout_width="100dp"
+        style="@style/TableItemTheme"
+        android:layout_height="45dp"
+
+        android:gravity="left"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:id="@+id/txt_grossvalue"
+        android:layout_width="150dp"
+        style="@style/TableItemTheme"
+        android:layout_height="45dp"
+
+        android:gravity="left"
+        android:ellipsize="end"
+    />
+
+
+
+
+</LinearLayout>
+
+
+

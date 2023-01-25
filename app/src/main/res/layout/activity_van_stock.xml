@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.advanced.minhas.activity.VanStockActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/view_line">
+
+    <!--header-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_toolbar_height"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:focusableInTouchMode="true">
+
+            <!--title-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/app_title"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_xl"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+
+            <SearchView
+                android:id="@+id/searchView_productList"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/padding_xxl"
+                android:layout_marginBottom="10dp"
+                android:focusable="false"
+                android:iconifiedByDefault="false"
+                android:queryHint="Search Product"
+
+
+                android:theme="@style/SearchViewTheme" />
+            <LinearLayout
+                android:layout_toRightOf="@+id/searchView_productList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone"
+                >
+            <ImageButton
+                android:id="@+id/img_print"
+                android:padding="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_baseline_print_24"
+               />
+                <TextView
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Print"/>
+            </LinearLayout>
+            <ImageButton
+                android:id="@+id/imageButton_vanstock_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/padding_4xxl"
+                android:background="@color/colorTransparent"
+                android:src="@drawable/ic_update_white"
+                android:visibility="gone"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="@dimen/padding_4xxl"
+                android:baselineAligned="false"
+                android:gravity="center"
+                android:minHeight="80dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/padding_4xxl"
+                    android:layout_marginTop="@dimen/padding_xl"
+                    android:layout_weight="3"
+                    android:gravity="center"
+
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/padding_xxl">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/padding_xl"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_product_type_white" />
+
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spinner_vanStock_productType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/padding_xxxl"
+                            android:minHeight="@dimen/spinner_height"
+                            android:spinnerMode="dropdown"
+                            android:theme="@style/ViewTheme_white" />
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_horizontal"
+                        android:layout_marginBottom="@dimen/padding_m"
+                        android:background="@color/colorWhite" />
+
+                </LinearLayout>
+
+
+                <!--Type-->
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/padding_4xxl"
+                    android:layout_marginTop="@dimen/padding_xl"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/padding_xxl"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/padding_xl"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_product_brand_white" />
+
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spinner_vanStock_brand"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/padding_xxxl"
+                            android:minHeight="@dimen/spinner_height"
+                            android:spinnerMode="dropdown"
+                            android:theme="@style/ViewTheme_white" />
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_horizontal"
+                        android:layout_marginBottom="@dimen/padding_m"
+                        android:background="@color/colorWhite" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <!--Views-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/padding_xxl">
+
+        <!--Error View with progressbar-->
+        <include
+            android:id="@+id/product_vanStock"
+            layout="@layout/progress_recyclerview" />
+
+        <LinearLayout
+            android:id="@+id/layout_vanStock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:padding="@dimen/padding_l"
+                    android:text="Van Stock"
+                    android:textColor="@color/grayText"
+                    android:textSize="@dimen/text_m"
+                    android:textStyle="normal" />
+
+
+               <!-- <TextView
+                    android:id="@+id/textView_vanStock_totalStockQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/padding_4xxl"
+                    android:layout_toStartOf="@+id/textView_vanStock_totalStockAmount"
+                    android:padding="@dimen/padding_l"
+                    android:text="Total Quantity: "
+                    android:textColor="@color/primaryText"
+                    android:textSize="@dimen/text_m"
+                    android:textStyle="normal" />
+
+
+                <TextView
+                    android:id="@+id/textView_vanStock_totalStockAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/padding_xxl"
+                    android:padding="@dimen/padding_l"
+                    android:text="Total Stock : "
+                    android:textColor="@color/primaryText"
+                    android:textSize="@dimen/text_m"
+                    android:textStyle="normal" />-->
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <include layout="@layout/item_divider_horizontal_gray" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerView_vanStock_product"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:reverseLayout="false"
+                            app:stackFromEnd="false" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+             </RelativeLayout>
+          </LinearLayout>
+       </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_above="@+id/layout_total"
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/colorgreylight_bg"/>
+
+
+    <LinearLayout
+
+        android:id="@+id/layout_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/layout_total_value"
+        android:background="@color/colorWhite"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total Quantity"
+            android:textColor="@color/buttonRed"
+            android:textSize="@dimen/text_m"
+            android:layout_centerVertical="true"
+            android:lines="1"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total Stock"
+            android:textColor="@color/buttonRed"
+            android:textSize="@dimen/text_m"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:lines="1"
+            android:padding="5dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_total_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/text_s"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/textView_vanStock_totalStockQuantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total Quantity"
+            android:textColor="@color/colorGrayDashBoard"
+            android:textSize="@dimen/text_xl"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_m"
+            android:lines="1"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/textView_vanStock_totalStockAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total Stock"
+            android:textColor="@color/colorGrayDashBoard"
+            android:textSize="@dimen/text_xl"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:lines="1"
+            android:padding="5dp"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

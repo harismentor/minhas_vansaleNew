@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.advanced.minhas.activity.Preview_Receipt">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentPaddingLeft="@dimen/padding_l"
+        android:id="@+id/bottom_layout"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:padding="@dimen/padding_m">
+
+
+
+
+            <com.rey.material.widget.Button
+                android:id="@+id/button_preview_home"
+                style="@style/Material.Drawable.Ripple.Wave"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/no_sale_right_badge"
+                android:layout_margin="@dimen/padding_l"
+                android:layout_gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="true"
+                android:drawableLeft="@drawable/ic_home_white"
+                android:drawablePadding="@dimen/padding_l"
+                android:textSize="@dimen/text_m"
+                android:paddingLeft="@dimen/button_padding"
+                android:paddingRight="@dimen/button_padding"
+                android:text="@string/home"
+                app:rd_enable="true"/>
+
+
+
+
+            <com.rey.material.widget.Button
+                android:id="@+id/button_preview_print"
+                style="@style/Material.Drawable.Ripple.Wave"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/button_print"
+                android:layout_margin="@dimen/padding_l"
+                android:layout_gravity="start|center"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="true"
+                android:drawableLeft="@drawable/ic_print_white"
+                android:drawablePadding="@dimen/padding_l"
+                android:textSize="@dimen/text_m"
+                android:paddingLeft="@dimen/button_padding"
+                android:paddingRight="@dimen/button_padding"
+                android:text="@string/printpdf"
+                android:enabled="false"
+                app:rd_enable="true"/>
+            <com.rey.material.widget.Button
+                android:visibility="gone"
+                android:id="@+id/button_background_print"
+                style="@style/Material.Drawable.Ripple.Wave"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/button_print"
+                android:layout_margin="@dimen/padding_l"
+                android:layout_gravity="start|center"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="true"
+                android:drawableLeft="@drawable/ic_print_white"
+                android:drawablePadding="@dimen/padding_l"
+                android:textSize="@dimen/text_m"
+                android:paddingLeft="@dimen/button_padding"
+                android:paddingRight="@dimen/button_padding"
+                android:text="@string/print"
+                app:rd_enable="true"/>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/padding_xl"
+        android:layout_marginRight="@dimen/padding_xl"
+        android:layout_above="@id/bottom_layout">
+
+
+
+        <RelativeLayout
+            android:id="@+id/connectionView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_xl"
+            android:layout_marginTop="@dimen/padding_xl">
+
+
+            <com.rey.material.widget.Button
+                android:id="@+id/button_preview_connect"
+                style="@style/Material.Drawable.Ripple.Wave"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="@dimen/padding_l"
+                android:layout_marginTop="@dimen/padding_l"
+                android:layout_marginEnd="@dimen/padding_l"
+                android:layout_marginBottom="@dimen/padding_l"
+                android:background="@drawable/return_right_finish"
+                android:drawableLeft="@drawable/ic_bluetooth_connected"
+                android:drawablePadding="@dimen/padding_l"
+                android:paddingLeft="@dimen/button_padding"
+                android:paddingRight="@dimen/button_padding"
+                android:text="@string/text_connect"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_m"
+                android:visibility="visible"
+                app:rd_enable="true" />
+
+
+
+
+            <com.rey.material.widget.Button
+                android:id="@+id/button_preview_connection_enabled"
+                style="@style/Material.Drawable.Ripple.Wave"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/return_right_finish"
+                android:layout_margin="@dimen/padding_l"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text_m"
+                android:paddingLeft="@dimen/button_padding"
+                android:paddingRight="@dimen/button_padding"
+                android:text="@string/text_enable_bluetooth"
+                app:rd_enable="true"
+
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_preview_devices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/button_preview_connect"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/padding_xxl"
+                android:layout_marginEnd="@dimen/padding_xxl"
+                android:layout_toLeftOf="@+id/button_preview_connect"
+                android:minHeight="@dimen/spinner_height"
+                android:spinnerMode="dropdown"
+                android:theme="@style/ViewTheme_dark" />
+
+
+        </RelativeLayout>
+
+
+
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/layout_header"
+            app:contentPaddingRight="@dimen/padding_xxxl"
+            app:contentPaddingLeft="@dimen/padding_xxxl"
+            app:contentPaddingTop="@dimen/padding_l"
+            app:contentPaddingBottom="@dimen/padding_l"
+            android:layout_below="@+id/connectionView">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_receipt_preview_title"
+                    android:textSize="@dimen/text_4xxl"
+                    android:textStyle="bold"
+                    android:textColor="@color/primaryText"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/textView_receipt_preview_shopDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_l"
+                    android:textColor="@color/grayText"
+                    android:layout_below="@+id/textView_receipt_preview_title"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/textView_receipt_preview_receiptNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_receipt_preview_title"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="@dimen/text_l"
+                    android:textColor="@color/grayText"
+                    android:layout_marginBottom="@dimen/padding_xl" />
+
+                <TextView
+                    android:id="@+id/textView_receipt_preview_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_receipt_preview_receiptNo"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="@dimen/text_l"
+                    android:textColor="@color/grayText"
+                    android:layout_marginBottom="@dimen/padding_xl" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/ly_accountdetails"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            android:layout_below="@id/layout_header"
+            app:contentPaddingRight="@dimen/padding_xxxl"
+            app:contentPaddingLeft="@dimen/padding_xxxl"
+            app:contentPaddingTop="@dimen/padding_l"
+            app:contentPaddingBottom="@dimen/padding_l">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/view_opening_balance"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_balance_outstanding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="2"
+                        style="@style/TextViewTableColStyle"
+                        android:layout_marginStart="@dimen/padding_l"
+                        android:gravity="start"
+                        android:layout_marginBottom="@dimen/padding_l"
+                        />
+
+                    <include
+                        layout="@layout/item_divider_horizontal_dark"
+                        android:baselineAligned="false" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView_balance_paid"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:lines="2"
+                            style="@style/TextViewTableColStyle"
+                            android:layout_marginStart="@dimen/padding_l"
+                            android:gravity="start|center"/>
+
+                        <TextView
+                            android:id="@+id/textView_currentBalance"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:lines="2"
+                            style="@style/TextViewTableColStyle"
+                            android:layout_marginStart="@dimen/padding_l"
+                            android:gravity="start|center"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

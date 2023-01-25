@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.StockTransfer">
+
+    <include
+        layout="@layout/toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGreydashboard_bg"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/TextViewTableTitleStyle"
+            android:layout_weight=".3"
+            android:text="#" />
+
+        <TextView
+            style="@style/TextViewTableTitleStyle"
+            android:layout_weight="1.5"
+            android:gravity="start|center"
+            android:text="Transfer ID" />
+
+        <TextView
+            style="@style/TextViewTableTitleStyle"
+            android:layout_weight="1"
+            android:text="Date" />
+
+
+        <TextView
+            style="@style/TextViewTableTitleStyle"
+            android:layout_weight="1.5"
+            android:gravity="start|center"
+            android:text="From" />
+
+        <TextView
+            style="@style/TextViewTableTitleStyle"
+            android:layout_weight="1.5"
+            android:gravity="start|center"
+            android:text="To" />
+
+        <TextView
+            style="@style/TextViewTableTitleStyle"
+            android:layout_weight="2"
+            android:gravity="start|center"
+            android:text="Description" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGrayLight">
+
+        <TextView
+            android:id="@+id/textview_heading"
+            style="@style/TextViewTableTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center"
+            android:text="Stock Transfer"
+            android:textSize="@dimen/text_l"
+            android:layout_margin="@dimen/padding_l"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_stock_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+
+</LinearLayout>

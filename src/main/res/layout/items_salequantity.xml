@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+<LinearLayout
+
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:weightSum="3"
+android:layout_marginTop="10dp"
+
+    android:background="@color/colorGrayDark"
+
+    >
+
+
+<TextView
+    android:id="@+id/tv_size"
+    android:background="@color/colorWhite"
+    style="@style/TextViewBoldGrayStyle"
+    android:layout_weight="1"
+    android:text="Size"
+    android:textColor="@color/colorBlack"
+    android:textSize="@dimen/text_m"
+    android:padding="5dp"/>
+
+<TextView
+    android:id="@+id/tv_availableqty"
+    android:background="@color/colorWhite"
+    android:padding="5dp"
+    style="@style/TextViewBoldGrayStyle"
+    android:textColor="@color/colorBlack"
+    android:layout_weight="1"
+    android:text="Available Qty"
+    android:textSize="@dimen/text_m" />
+<EditText
+    android:id="@+id/edt_qty"
+    android:background="@color/colorWhite"
+    android:padding="5dp"
+    style="@style/TextViewBoldGrayStyle"
+    android:textColor="@color/colorBlack"
+    android:layout_weight="1"
+
+    android:inputType="numberDecimal"
+    android:textSize="@dimen/text_m" />
+
+
+</LinearLayout>
+
+</LinearLayout>

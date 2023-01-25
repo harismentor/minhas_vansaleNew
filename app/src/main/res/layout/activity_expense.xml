@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ExpenseActivity">
+
+    <!--head bar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_toolbar_height"
+        android:background="@color/colorPrimary"
+        android:baselineAligned="false"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+            <!--title-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/app_title"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_xxxl" />
+
+        </RelativeLayout>
+
+        <include
+            layout="@layout/toolbar_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:paddingTop="@dimen/padding_m" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/progressbar_errorview"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/view_expense_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/padding_l"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.rey.material.widget.Button
+                    android:id="@+id/button_expense_approve"
+                    style="@style/Material.Drawable.Ripple.Wave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_height"
+                    android:text="Submit for Approval"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_m"
+                    app:rd_enable="true"
+                    android:background="@drawable/button_green_rect"
+                    android:paddingLeft="@dimen/padding_xl"
+                    android:paddingRight="@dimen/padding_xl"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="@dimen/padding_xl"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/padding_l"
+                    android:paddingEnd="@dimen/padding_l"
+                    android:paddingTop="@dimen/padding_l"
+                    android:layout_above="@id/button_expense_approve"
+                    android:layout_marginBottom="@dimen/padding_l">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/colorGrayLight"
+                        android:layout_marginBottom="@dimen/padding_l">
+
+                        <TextView
+                            android:id="@+id/textView_expense_date"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:gravity="start|center"
+                            android:text="19-Mar-2018"
+                            android:layout_gravity="start"/>
+
+                        <TextView
+                            android:id="@+id/textView_expense_imprest_account"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:text=""
+                            android:layout_gravity="end"/>
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="@dimen/padding_l">
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"/>
+
+                        <TextView
+                            style="@style/TextViewTableColStyleNew"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:text="Amount"/>
+
+                        <TextView
+                            style="@style/TextViewTableColStyleNew"
+                            android:layout_weight="2"
+                            android:text="Receipt No" />
+
+                        <TextView
+                            style="@style/TextViewTableColStyleNew"
+                            android:layout_weight="4"
+                            android:text="Remarks" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView_expense"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</LinearLayout>

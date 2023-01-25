@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGraylight"
+        android:layout_marginTop="10dp">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cv_click"
+            android:background="@color/colorGraylight"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:id="@+id/tv_slno"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_m"
+                android:lines="1"
+                android:layout_alignParentRight="true"
+                android:text="Days"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_m" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/tv_sale_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/padding_m"
+                    android:layout_marginTop="@dimen/padding_m"
+                    android:layout_marginEnd="@dimen/padding_m"
+                    android:layout_marginBottom="@dimen/padding_m"
+                    android:gravity="start|center"
+                    android:lines="1"
+                    android:text="Date"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_m" />
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/tv_sale_invoiceno"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_m"
+                    android:lines="1"
+                    android:layout_alignParentRight="true"
+                    android:text="Days"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_m" />
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/tv_shopname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_m"
+                android:lines="1"
+                android:layout_alignParentRight="true"
+                android:text="Days"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_m" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/tv_shopcode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_m"
+                    android:lines="1"
+                    android:layout_alignParentRight="true"
+                    android:text="Days"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_m" />
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/tv_saletotal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_m"
+                    android:lines="1"
+                    android:layout_alignParentRight="true"
+                    android:text="Days"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_m" />
+            </LinearLayout>
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

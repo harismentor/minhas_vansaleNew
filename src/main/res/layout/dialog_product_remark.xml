@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:padding="@dimen/padding_l">
+
+        <TextView
+            android:id="@+id/tv_paymentTypeDialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_xl"
+            android:text="ADD REMARK"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="@dimen/padding_xl"
+            android:textSize="@dimen/text_l"/>
+
+
+        <TextView
+            android:id="@+id/textView_paymentTypeDialog_date"
+            android:layout_below="@+id/tv_paymentTypeDialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_l"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="@dimen/padding_xl"
+            android:textSize="@dimen/text_l"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="@dimen/padding_l"
+       />
+
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_xxl"
+        android:orientation="vertical">
+        <TextView
+            android:text="Add Remark"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_l"
+            android:textColor="@color/grayText"
+            android:textSize="@dimen/text_l"
+            android:layout_margin="@dimen/padding_l"/>
+        <EditText
+            android:id="@+id/edt_remark"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="@dimen/padding_l"
+            android:textColor="@color/grayText"
+            android:textSize="@dimen/text_l"
+            android:layout_margin="@dimen/padding_l"/>
+
+
+    </LinearLayout>
+
+
+
+    <include layout="@layout/item_divider_horizontal_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:orientation="horizontal"
+        >
+
+        <com.rey.material.widget.Button
+            android:id="@+id/button_remarkDialog_cancel"
+            style="@style/Material.Drawable.Ripple.Wave"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_toolbar_height"
+            android:background="@color/colorTransparent"
+            android:layout_margin="@dimen/layout_margin"
+            android:layout_gravity="center"
+            android:textColor="@color/grayText"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_l"
+            android:paddingLeft="@dimen/button_padding"
+            android:paddingRight="@dimen/button_padding"
+            android:text="CANCEL"
+            app:rd_enable="true"/>
+
+
+        <com.rey.material.widget.Button
+            android:id="@+id/button_remarkTypeDialog_ok"
+            style="@style/Material.Drawable.Ripple.Wave"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_toolbar_height"
+            android:background="@color/colorTransparent"
+            android:layout_margin="@dimen/layout_margin"
+            android:layout_gravity="center"
+            android:textColor="@color/grayText"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_l"
+            android:paddingLeft="@dimen/button_padding"
+            android:paddingRight="@dimen/button_padding"
+            android:text="OK"
+            app:rd_enable="true"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

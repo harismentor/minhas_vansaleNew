@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:errorview="http://schemas.android.com/apk/res-auto"
+>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrll"
+       >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/lytop">
+
+
+
+            <LinearLayout
+                android:id="@+id/layout_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/padding_h"
+                android:background="@color/colorAccentLogin"
+                android:layout_marginLeft="@dimen/padding_h"
+                android:layout_marginRight="@dimen/padding_h"
+                android:visibility="visible"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Select Customer"
+                    android:gravity="center"/>
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/spinner_cart_shops"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.2"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/button_height"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_customer"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="visible">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textInputLayout_fromdate"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone">
+
+                    <EditText
+                        style="@style/EditTextStyle"
+                        android:id="@+id/edittext_fromdate"
+                        android:hint="From Date"
+                        android:inputType="textEmailAddress"
+                        android:lineSpacingExtra="10sp"
+                        android:textSize="@dimen/text_m"
+                        android:drawableRight="@drawable/ic_date_picker"
+                        android:focusable="false"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textInputLayout_todate"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp">
+
+                    <EditText
+                        style="@style/EditTextStyle"
+                        android:id="@+id/edittext_todate"
+                        android:hint="To Date"
+                        android:inputType="textEmailAddress"
+                        android:lineSpacingExtra="10sp"
+                        android:textSize="@dimen/text_m"
+                        android:drawableRight="@drawable/ic_date_picker"
+                        android:focusable="false"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_heading"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/layout_date"
+                android:background="@color/colorCartSize">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Date"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="5dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    />
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="Invoice No"
+                    android:paddingLeft="4dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    />
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="Invoice Amount"
+                    android:paddingLeft="4dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    />
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="Received"
+                    android:paddingLeft="4dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    />
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="Balance"
+                    android:paddingLeft="4dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+
+                android:layout_below="@+id/layout_heading"
+                android:layout_marginTop="@dimen/padding_h"
+                android:id="@+id/recyclerView_ledger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBar_ledger"
+                style="@style/ProgressBarStyle"
+                android:layout_centerInParent="true"/>
+
+            <com.advanced.sunrise.view.ErrorView
+                android:id="@+id/error_view_ledger"
+                style="@style/ErrorView"
+                errorview:ev_titleColor="@color/error_view_title"
+                errorview:ev_retryButtonText="@string/error_view_retry"
+                android:layout_centerInParent="true"/>
+
+            </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/lytop">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balance :"
+            android:textStyle="bold"
+            android:id="@+id/tv_balance_total"/>
+
+    </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

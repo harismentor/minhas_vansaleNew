@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2699fc</color>
+    <color name="colorPrimaryDark">#3E95D1</color>
+    <color name="colorAccent">#53B44C</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorGrayLightDark">#9F9F9F</color>
+
+    <color name="colorGreen">#046608</color>
+    <color name="colorRed">#d74437</color>
+    <color name="colorBlue">#004468</color>
+    <color name="colorGrayDark">#4d4d4d</color>
+    <color name="colorGrayLight">#cccccc</color>
+    <color name="colorGrayMedium">#6D6868</color>
+    <color name="colorGraylight">#e8e8e8</color>
+
+    <color name="colorGreydashboard_bg">#ededed</color>
+
+    <!--text Color-->
+
+    <color name="primaryText">#010101</color>
+    <color name="secondaryText">#9e9e9e</color>
+    <color name="grayText">#474747</color>
+    <!--<color name="light_ext">#b5b5b5</color>-->
+
+    <color name="text_blue">#47ABF0</color>
+    <color name="textHint">#848484</color>
+    <color name="text_green">#046608</color>
+
+    <color name="colorReportIcon">#275875</color>
+
+
+    <!--Button-->
+    <color name="buttonGreen">#53B44C</color>
+    <color name="buttonRed">#d74437</color>
+
+    <!--<color name="buttonGreenDisable">#7fba7b</color>-->
+
+
+    <color name="switchNormal">#878586</color>
+    <color name="switchActivated">#257B6A</color>
+
+
+    <color name="colorAccentLogin">#ccdcdcdc</color>
+
+    <color name="colorCartSize">#81c683</color>
+
+
+
+    <!--Layout Color-->
+
+    <color name="colorSycamore">#808E32</color>
+
+    <color name="bg_ivory">#EEEEEE</color>
+
+
+
+    <color name="divider_light">#cccccc</color>
+
+    <color name="divider_dark">#f3f3f3</color>
+
+    <color name="colorGrayDashBoard">#383838</color>
+
+    <!--#D8D6D7-->
+
+
+    <!--Dash Bord Color-->
+
+    <color name="colorSales">#47ABF0</color>
+    <color name="colorSalesReturn">#40A698</color>
+    <!--<color name="colorSalesReturn">#6ABF66</color>-->
+    <color name="colorReceipt">#6ABF66</color>
+    <color name="colorNewShop">#EFAF31</color>
+    <color name="colorNoSale">#F66848</color>
+    <color name="colorLocation">#1e3678</color>
+    <color name="colorSettings">#65D0E1</color>
+
+    <color name="colorVanStock">#6ABF66</color>
+
+    <color name="colorFinish">#a5101e</color>
+
+    <color name="colorQuotation">#4209a7</color>
+
+    <!--<color name="colorQuotation">#a1550b</color>-->
+
+    <!--
+
+    <color name="colorSales">#47ABF0</color>
+    <color name="colorReceipt">#40A698</color>
+    <color name="colorVanStock">#6ABF66</color>
+    <color name="colorNewShop">#EFAF31</color>
+    <color name="colorSalesReturn">#F66848</color>
+    <color name="colorSettings">#65D0E1</color>
+    -->
+
+    <!--ErrorView Colour-->
+
+    <color name="error_view_title">#f51e3678</color>
+    <color name="errorView_accent">#FF4081</color>
+
+
+    <!--error View Color-->
+
+    <color name="error_view_text">#656565</color>
+    <color name="error_view_text_dark">#CC000000</color>
+    <color name="error_view_text_light">#858585</color>
+
+    <color name="error_view_retry_button_background">#30000000</color>
+    <color name="error_view_retry_button_background_stroke">#50000000</color>
+
+
+
+    <!--Icon-->
+<!--
+
+    <color name="colorIcon">#848484</color>
+    <color name="icon_grey">#9e9e9e</color>
+
+-->
+
+
+    <color name="colorgreylight_bg">#f3f3f3</color>
+
+
+
+
+</resources>

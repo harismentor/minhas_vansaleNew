@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MapViewActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/layout_profile_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile_view_top"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_xxl"
+            >
+            <TextView
+                android:id="@+id/textView_map_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:padding="@dimen/padding_l"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_xl" />
+
+            <TextView
+                android:id="@+id/textView_map_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|top"
+                android:padding="@dimen/padding_l"
+                android:textColor="@color/secondaryText"
+                android:textSize="@dimen/text_xl" />
+
+
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchor="@id/layout_profile_header"
+        app:layout_anchorGravity="center|bottom"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_marginTop="@dimen/padding_add_new_shop"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/padding_2xxl"
+        android:layout_marginEnd="@dimen/padding_2xxl">
+
+
+
+
+
+
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/mapView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_map_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/fab_margin"
+                    app:backgroundTint="@color/colorPrimaryDark"
+                    app:fabSize="normal"
+                    app:srcCompat="@drawable/ic_location_update"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"/>
+
+
+                <!--  <fragment
+                      android:id="@+id/map"
+                      android:name="com.google.android.gms.maps.SupportMapFragment"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent" />-->
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+
+
+
+
+<!--
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MapViewActivity" />
+-->

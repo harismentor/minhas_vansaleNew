@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.advanced.minhas.fragment.ShopFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+
+        <RelativeLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            >
+
+
+            <com.rey.material.widget.Button
+                android:id="@+id/button_day_close"
+                style="@style/Material.Drawable.Ripple.Wave"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_toolbar_height"
+                android:text="Day Close"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:textSize="@dimen/text_m"
+                app:rd_enable="true"
+                android:drawableStart="@drawable/ic_round_red_12dp"
+                android:layout_marginStart="@dimen/layout_margin"
+                android:background="@color/colorPrimary"
+                android:paddingLeft="@dimen/padding_l"
+                android:visibility="visible"
+              />
+            <LinearLayout
+                android:id="@+id/ly_sync"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_toLeftOf="@+id/button_home_register"
+                android:layout_toRightOf="@+id/button_day_close"
+                android:layout_marginRight="@dimen/layout_margin"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="70dp"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sync"
+                    android:textColor="@color/colorWhite"
+                    ></TextView>
+
+                <ImageButton
+                    android:id="@+id/ib_syncbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_sync_24"
+                    android:background="@color/colorTransparent"
+                    />
+            </LinearLayout>
+
+            <com.rey.material.widget.Button
+                android:id="@+id/button_home_register"
+                style="@style/Material.Drawable.Ripple.Wave"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_toolbar_height"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:layout_toLeftOf="@+id/imageButton_home_menu"
+                android:background="@color/colorPrimary"
+                android:drawableStart="@drawable/ic_round_green_12dp"
+                android:paddingLeft="@dimen/padding_xl"
+                android:paddingRight="@dimen/padding_l"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_m"
+                app:rd_enable="true" />
+
+            <!--menu button-->
+
+            <ImageButton
+                android:id="@+id/imageButton_home_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:layout_marginRight="@dimen/layout_margin"
+                android:background="@color/colorTransparent"
+                android:src="@drawable/ic_action_more" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:minHeight="60dp"
+            android:orientation="horizontal">
+
+
+            <!--route-->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/padding_l"
+                android:layout_marginStart="@dimen/padding_xxl"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/padding_m"
+                    android:orientation="horizontal">
+
+
+                   <!-- <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_route" />-->
+
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/spinner_home_route"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/spinner_height"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/padding_l"
+                        android:spinnerMode="dropdown"
+                        android:theme="@style/ViewTheme_white" />
+
+
+                </LinearLayout>
+
+
+                <View
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_horizontal"
+                    android:layout_marginBottom="@dimen/padding_xl"
+                    android:layout_marginTop="@dimen/padding_m"
+                    android:background="@color/colorWhite" />
+
+
+            </LinearLayout>
+
+
+            <!--group-->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/padding_l"
+                android:layout_marginStart="@dimen/padding_xxl"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/padding_m"
+                    android:orientation="horizontal">
+
+
+                    <!--<ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_group" />-->
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/spinner_home_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/spinner_height"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/padding_l"
+                        android:spinnerMode="dropdown"
+                        android:theme="@style/ViewTheme_white"/>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_horizontal"
+                    android:layout_marginBottom="@dimen/padding_xl"
+                    android:layout_marginTop="@dimen/padding_m"
+                    android:background="@color/colorWhite" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_l">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <SearchView
+            android:id="@+id/searchView_shopList"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search Customer"
+            android:theme="@style/SearchViewTheme"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/padding_xxl"
+            android:focusable="false"
+            android:layout_gravity="left"
+            android:visibility="gone"
+            />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switch_print_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end|top"
+        android:theme="@style/SwitchStyle" />
+
+</FrameLayout>
+
+    <include layout="@layout/progress_recyclerview"/>
+
+
+</LinearLayout>
+
+    </LinearLayout>

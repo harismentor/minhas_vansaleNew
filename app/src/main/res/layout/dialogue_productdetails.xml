@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="2"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+
+                >
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:text="Product Code"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_m"
+                    />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/tv_productid"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_m"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="2"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                >
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:text="Product Name"
+                    android:textSize="@dimen/text_m"
+
+                    />
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/tv_productname"
+                    android:textSize="@dimen/text_m"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorBlue"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    style="@style/TextViewBoldGrayStyle"
+                    android:textColor="@color/colorWhite"
+                    android:layout_weight="1"
+                    android:text="Size"
+                    android:textSize="@dimen/text_m" />
+                <TextView
+                    style="@style/TextViewBoldGrayStyle"
+                    android:textColor="@color/colorWhite"
+                    android:layout_weight="1"
+                    android:text="Quantity"
+                    android:textSize="@dimen/text_m" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_xl">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recyclerview"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/tv_total"
+                    style="@style/TextViewBoldGrayStyle"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="1"
+                    android:text="Total"
+                    android:textStyle="bold"
+                    android:gravity="right"
+                    android:textSize="@dimen/text_l" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="right"
+                    android:id="@+id/tv_qty"
+                    style="@style/TextViewBoldGrayStyle"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/text_l" />
+
+            </LinearLayout>
+
+                <Button
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/bt_close"
+                    android:textColor="@color/colorWhite"
+                    android:text="CLOSE"
+                    android:background="@color/colorRed"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="10dp"
+
+                    />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

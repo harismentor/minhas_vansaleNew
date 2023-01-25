@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/padding_s"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="@dimen/padding_m">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/padding_s"
+            >
+
+            <TextView
+                android:id="@+id/textView_expense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="Expense"
+                android:layout_marginLeft="@dimen/padding_m"
+                android:layout_marginTop="@dimen/padding_s"
+                android:layout_marginBottom="@dimen/padding_s"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="@dimen/text_m"
+                android:gravity="left|center_vertical"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/textView_remarks"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Remarks"
+                android:layout_marginTop="@dimen/padding_s"
+                android:layout_marginBottom="@dimen/padding_s"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="@dimen/text_m"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/textView_amount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:text="Amount"
+                android:layout_marginTop="@dimen/padding_s"
+                android:layout_marginBottom="@dimen/padding_s"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="@dimen/text_m"
+                android:gravity="right|center_vertical"
+                android:layout_centerVertical="true"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_m"
+            >
+
+            <TextView
+                android:layout_toLeftOf="@+id/textView_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="status : "
+                android:textColor="@color/colorGrayDark"
+                android:textSize="@dimen/text_s"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/textView_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/colorGrayDark"
+                android:textSize="@dimen/text_m" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

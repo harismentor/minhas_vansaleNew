@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGraylight">
+
+            <TextView
+                android:id="@+id/textView_item_sale_report_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_m"
+                android:layout_weight="1"
+                android:gravity="start|center"
+                android:text="Date"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_m"
+                android:lines="1"/>
+
+            <TextView
+                android:id="@+id/textView_item_sale_report_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_m"
+                android:lines="1"
+                android:layout_alignParentRight="true"
+                android:text="Days"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_m" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/layout_invoice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/padding_xl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Invoice"
+                    android:lines="1"
+                    android:textColor="@color/colorGrayMedium"
+                    android:textSize="@dimen/text_m" />
+
+
+                <TextView
+                    android:id="@+id/textView_item_sale_report_invoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:lines="1"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_l"
+                    android:layout_marginBottom="@dimen/padding_xl"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorGraylight"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/padding_xl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Time"
+                    android:lines="1"
+                    android:textColor="@color/colorGrayMedium"
+                    android:textSize="@dimen/text_m" />
+
+
+                <TextView
+                    android:id="@+id/textView_item_sale_report_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:lines="1"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_l"
+                    android:layout_marginBottom="@dimen/padding_xl"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorGraylight"/>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/padding_xl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Item"
+                    android:lines="1"
+                    android:textColor="@color/colorGrayMedium"
+                    android:textSize="@dimen/text_m" />
+
+
+                <TextView
+                    android:id="@+id/textView_item_sale_report_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:lines="1"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_l"
+                    android:layout_marginBottom="@dimen/padding_xl"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorGraylight"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <!-- <TextView
+                     android:layout_marginTop="@dimen/padding_xl"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1"
+                     android:gravity="center"
+                     android:text="Action"
+                     android:lines="1"
+                     android:textColor="@color/buttonRed"
+                     android:textSize="@dimen/text_m" />-->
+
+
+                <ImageButton
+                    android:id="@+id/imageButton_item_sale_report_view"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorTransparent"
+                    android:src="@drawable/ic_sale_view_blue"
+                    />
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorGraylight"/>
+
+            <LinearLayout
+
+
+                android:id="@+id/lyt_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <!-- <TextView
+                     android:layout_marginTop="@dimen/padding_xl"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1"
+                     android:gravity="center"
+                     android:text="Action"
+                     android:lines="1"
+                     android:textColor="@color/buttonRed"
+                     android:textSize="@dimen/text_m" />-->
+
+
+
+
+                <ImageButton
+                    android:id="@+id/imageButton_item_sale_report_edit"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorTransparent"
+                    android:src="@drawable/ic_edit_blue"
+                    />
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorGraylight"/>
+
+            <LinearLayout
+
+
+                android:id="@+id/lyt_delete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:id="@+id/imageButton_item_sale_report_delete"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorTransparent"
+                    android:src="@drawable/ic_delete_red"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</FrameLayout>
+

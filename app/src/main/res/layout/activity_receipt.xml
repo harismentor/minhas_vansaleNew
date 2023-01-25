@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.advanced.minhas.activity.ReceiptActivity">
+
+
+    <LinearLayout
+        android:id="@+id/view_receipt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+    <!--head bar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_toolbar_height"
+        android:background="@color/colorPrimary"
+        android:baselineAligned="false"
+        android:focusableInTouchMode="true"
+        android:minHeight="60dp"
+        android:orientation="horizontal">
+
+        <include
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            layout="@layout/toolbar_container"/>
+
+
+    </LinearLayout>
+
+    <!--bottom layout-->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_xxl"
+            android:paddingRight="@dimen/padding_xxl"
+            android:paddingTop="@dimen/padding_xxl">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/view_receipt_paid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+
+
+                app:contentPadding="@dimen/padding_l">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/TextViewTableColStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="Total Amount"
+                        android:textSize="@dimen/text_s"/>
+
+                    <TextView
+                        style="@style/TextViewTableColStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="Mode"
+                        android:textSize="@dimen/text_s"/>
+
+                </LinearLayout>
+
+
+                    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_receipt_totalAmount"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:padding="@dimen/padding_l"
+                        android:text=""
+                        android:textColor="@color/grayText"
+                        android:textSize="@dimen/text_l" />
+
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="@dimen/padding_l"
+                        android:layout_weight="1"
+                        android:background="@drawable/rect_text_view_disable"
+                        android:minHeight="@dimen/spinner_height"
+                        >
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spinner_receipt_payment_mode"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:entries="@array/payment_type_array"
+                            android:spinnerMode="dropdown"
+                            android:theme="@style/ViewTheme_dark" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                    <include layout="@layout/item_divider_horizontal_dark" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:id="@+id/ly_bankname"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            style="@style/TextViewTableColStyle"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+
+                            android:gravity="left|center"
+                            android:text="Bank Name"
+                            android:textSize="@dimen/text_s"/>
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spinner_receipt_bank"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:spinnerMode="dropdown"
+                            android:theme="@style/ViewTheme_dark" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            style="@style/TextViewTableColStyle"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="left|center"
+                            android:text="Reference No"
+                            android:textSize="@dimen/text_s"/>
+
+                        <EditText
+                            android:id="@+id/edt_referno"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+
+                            android:theme="@style/ViewTheme_dark" />
+                    </LinearLayout>
+
+
+                    </LinearLayout>
+                    //////////////////////////////////////////////
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            style="@style/TextViewTableColStyle"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/label_receipt_voucherno"
+                            android:gravity="left|center"
+                            android:text="Voucher No"
+                            android:textSize="@dimen/text_s"/>
+                        <EditText
+                            android:id="@+id/editText_voucherno"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_line_bg"
+                            android:hint=""
+                            android:inputType="text"
+                            android:minHeight="35dp"
+                            android:layout_marginLeft="@dimen/padding_l"
+                            android:padding="@dimen/padding_l"
+                            android:textColor="@color/grayText"
+                            android:textColorHint="@color/textHint"
+                            android:textSize="@dimen/text_m" />
+
+
+                    </LinearLayout>
+
+
+
+                    ///////////////////////////////////////////////
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/label_receipt_paid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/padding_l"
+                            android:text="Total Paid"
+                            android:textColor="@color/grayText"
+                            android:textSize="@dimen/text_s" />
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/editText_receipt_paid"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_line_bg"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:minHeight="35dp"
+                            android:layout_marginLeft="@dimen/padding_l"
+                            android:padding="@dimen/padding_l"
+                            android:textColor="@color/grayText"
+                            android:textColorHint="@color/textHint"
+                            android:textSize="@dimen/text_m" />
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+
+                        <com.rey.material.widget.Button
+                            android:id="@+id/button_receipt_finish"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/button_height"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/padding_l"
+                            android:layout_marginRight="@dimen/padding_l"
+                            android:layout_marginTop="@dimen/padding_l"
+                            android:background="@drawable/rectangle_greenbox"
+                            android:drawablePadding="@dimen/padding_l"
+                            android:paddingLeft="@dimen/button_padding"
+                            android:paddingRight="@dimen/button_padding"
+                            android:text="@string/finish"
+                            android:textAllCaps="true"
+                            android:textColor="@color/buttonGreen"
+                            android:textSize="@dimen/text_l"
+                            app:rd_enable="true"
+                            android:gravity="center" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone">
+                    <!--Total bill party amount-->
+                    <!--<TextView
+                        android:id="@+id/textView_receipt_totalAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_l"
+                        android:text="Total Amount :"
+                        android:textColor="@color/grayText"
+                        android:textSize="@dimen/text_l" />-->
+                    <!--label-->
+                    <!--<TextView
+                        android:id="@+id/label_receipt_paid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/padding_l"
+                        android:text="Total Paid :"
+                        android:textColor="@color/grayText"
+                        android:textSize="@dimen/text_l" />-->
+
+                    <!--paid Amount-->
+
+                    <!--<EditText
+                        android:id="@+id/editText_receipt_paid"
+                        android:layout_width="@dimen/editText_width"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle_box"
+                        android:hint="@string/sr"
+                        android:inputType="numberDecimal"
+                        android:minHeight="35dp"
+                        android:padding="@dimen/padding_l"
+                        android:textColor="@color/grayText"
+                        android:textColorHint="@color/textHint"
+                        android:textSize="@dimen/text_m" />-->
+
+                    <LinearLayout
+                        android:id="@+id/layout_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        >
+
+                        <!--<TextView
+                            style="@style/TextViewBoldGrayStyle"
+                            android:layout_weight="1"
+                            android:text="Mode"
+                            android:gravity="right|center"
+                            android:textColor="@color/grayText"
+                            android:textSize="@dimen/text_l" />-->
+
+
+                        <!--<FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="@dimen/padding_2xxl"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect_text_view_disable"
+                            android:minHeight="@dimen/spinner_height"
+                            >
+
+                            <android.support.v7.widget.AppCompatSpinner
+                                android:id="@+id/spinner_receipt_payment_mode"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:entries="@array/payment_type_array"
+                                android:spinnerMode="dropdown"
+                                android:theme="@style/ViewTheme_dark" />
+                        </FrameLayout>-->
+
+                    </LinearLayout>
+
+                    <!--<com.rey.material.widget.Button
+                        android:id="@+id/button_receipt_finish"
+                        style="@style/Material.Drawable.Ripple.Wave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="@dimen/padding_l"
+                        android:layout_marginRight="@dimen/padding_l"
+                        android:layout_marginTop="@dimen/padding_l"
+                        android:background="@drawable/button_green_round"
+                        android:drawableStart="@drawable/ic_check_white"
+                        android:drawablePadding="@dimen/padding_l"
+                        android:layout_below="@+id/layout_mode"
+                        android:paddingLeft="@dimen/button_padding"
+                        android:paddingRight="@dimen/button_padding"
+                        android:text="@string/finish"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_l"
+                        app:rd_enable="true" />-->
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="@dimen/padding_l">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!--Error View with progressbar-->
+                    <include layout="@layout/progressbar_errorview"/>
+
+
+                    <LinearLayout
+                        android:id="@+id/view_receipt_lists"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <!--Titles-->
+                       <!-- <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingBottom="@dimen/padding_l">
+
+                            &lt;!&ndash;Serial Number&ndash;&gt;
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                style="@style/TextViewTableColStyle"
+                                android:text="@string/sl_no"
+                                android:textStyle="bold" />
+
+                            &lt;!&ndash;receipt No&ndash;&gt;
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                style="@style/TextViewTableColStyle"
+                                android:text="@string/receipt"
+                                android:textStyle="bold" />
+
+                            &lt;!&ndash;date&ndash;&gt;
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                style="@style/TextViewTableColStyle"
+                                android:text="@string/date"
+                                android:textStyle="bold" />
+&lt;!&ndash;time&ndash;&gt;
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:text="@string/time"
+                                style="@style/TextViewTableColStyle"
+                                android:textStyle="bold" />
+
+                            &lt;!&ndash;paid&ndash;&gt;
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:gravity="end|center"
+                                android:layout_weight="2"
+                                android:text="@string/paid_amount"
+                                style="@style/TextViewTableColStyle"
+                                android:textStyle="bold" />
+&lt;!&ndash;balance&ndash;&gt;
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:gravity="end|center"
+                                android:layout_weight="2"
+                                style="@style/TextViewTableColStyle"
+                                android:text="@string/balance_amount"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                style="@style/TextViewTableColStyle"
+                                android:text="@string/actions"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>-->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        <include layout="@layout/item_divider_horizontal_gray" />
+
+                        <TextView
+                            android:id="@+id/textView_receipt_collectionTotal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/TextViewTableColStyle"
+                            android:gravity="end"
+                            android:textStyle="bold"
+                            android:layout_alignParentBottom="true"/>
+
+                        <!--Lists and error view-->
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerView_receipt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_above="@id/textView_receipt_collectionTotal"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

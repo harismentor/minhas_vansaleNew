@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+    <!--custom toolbar-->
+    <LinearLayout
+        android:id="@+id/view_invoiceReport_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_toolbar_height"
+        android:background="@color/colorPrimary"
+        android:baselineAligned="false"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/toolbar_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/padding_m" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_l">
+
+        <!--Error View with progressbar-->
+        <include
+            android:id="@+id/product_vanStock"
+            layout="@layout/progress_recyclerview" />
+
+        <HorizontalScrollView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/layout_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/lyt_head"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            >
+                            <TextView
+                                style="@style/TableHeaderTheme"
+                                android:layout_width="160dp"
+                                android:text="@string/outlet"></TextView>
+                            <TextView
+                                style="@style/TableHeaderTheme"
+                                android:layout_width="140dp"
+
+                                android:text="@string/total_cash_sale"></TextView>
+                            <TextView
+                                style="@style/TableHeaderTheme"
+                                android:layout_width="140dp"
+                                android:text="@string/total_credit_sale"></TextView>
+                            <TextView
+                                style="@style/TableHeaderTheme"
+                                android:layout_width="140dp"
+                                android:text="@string/total_return"></TextView>
+                            <TextView
+                                android:layout_width="140dp"
+                                style="@style/TableHeaderTheme"
+                                android:text="@string/total_cash_collection"></TextView>
+                            <TextView
+                                android:layout_width="140dp"
+                                style="@style/TableHeaderTheme"
+                                android:text="@string/total_bank_collection"></TextView>
+                            <TextView
+                                android:layout_width="150dp"
+                                style="@style/TableHeaderTheme"
+                                android:text="@string/total_cheque_collection"></TextView>
+
+                        </TableRow>
+
+                    </TableLayout>
+
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+
+                    android:id="@+id/recyclerview_daily_report"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_above="@id/lyt_total"
+                    android:layout_below="@id/lyt_head"
+                    app:reverseLayout="false"
+                    app:stackFromEnd="false" />
+
+                <LinearLayout
+
+
+                    android:id="@+id/lyt_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <TextView
+
+                                style="@style/TableTotalTheme"
+                                android:layout_width="160dp"
+                                android:text="@string/total"></TextView>
+
+                            <TextView
+                                android:id="@+id/txt_cash_sale"
+                                style="@style/TableTotalTheme"
+                                android:layout_width="140dp"
+
+                                android:text="@string/total_cash_sale"></TextView>
+
+                            <TextView
+                                android:id="@+id/txt_credit_sale"
+                                style="@style/TableTotalTheme"
+                                android:layout_width="140dp"
+                                android:text="@string/total_credit_sale"></TextView>
+
+                            <TextView
+                                android:id="@+id/txt_return_sale"
+                                style="@style/TableTotalTheme"
+                                android:layout_width="140dp"
+                                android:text="@string/total_return"></TextView>
+
+                            <TextView
+                                android:id="@+id/txt_cash_collection"
+                                style="@style/TableTotalTheme"
+                                android:layout_width="140dp"
+                                android:text="@string/total_cash_collection"></TextView>
+
+                            <TextView
+                                android:id="@+id/txt_bank_collection"
+                                style="@style/TableTotalTheme"
+                                android:layout_width="140dp"
+                                android:text="@string/total_bank_collection"></TextView>
+
+                            <TextView
+                                android:id="@+id/txt_cheque_collection"
+                                style="@style/TableTotalTheme"
+                                android:layout_width="150dp"
+                                android:text="@string/total_cheque_collection"></TextView>
+
+                        </TableRow>
+
+                    </TableLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/layout_sales_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGraylight"
+            >
+
+            <TextView
+                android:id="@+id/textView_item_receiptHistory_slNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_alignParentLeft="true"
+                style="@style/TextViewTableColStyle"/>
+
+            <!--date-->
+            <TextView
+                android:id="@+id/textView_item_receiptHistory_date"
+                style="@style/TextViewTableColStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/textView_item_receiptHistory_time"
+                android:layout_marginRight="@dimen/padding_xl"
+                />
+
+            <!--time-->
+            <TextView
+                android:id="@+id/textView_item_receiptHistory_time"
+                style="@style/TextViewTableColStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/padding_xl"
+                 />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewTableColStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="@string/receipt"
+                android:textSize="@dimen/text_s"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/padding_l"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="Paid"
+                android:textColor="@color/grayText"
+                android:textSize="@dimen/text_s" />
+
+            <!--<TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:gravity="center|start"
+                android:padding="@dimen/padding_l"
+                android:text="@string/unit"
+                android:textColor="@color/grayText"
+                android:textSize="@dimen/text_s" />-->
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:text="@string/balance"
+                android:textColor="@color/grayText"
+                android:textSize="@dimen/text_s" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center|start"
+                android:text=""
+                android:textColor="@color/grayText"
+                android:textSize="@dimen/text_s" />
+
+
+        </LinearLayout>
+
+
+        <!--<include
+            layout="@layout/item_divider_horizontal_dark"
+            android:baselineAligned="false" />-->
+
+        <!--add cart actions-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--code-->
+
+
+            <TextView
+                android:id="@+id/textView_item_receiptHistory_receipt"
+                style="@style/TextViewTableColStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:textColor="@color/colorGrayDashBoard"
+                android:text=""
+                android:textSize="@dimen/text_m"/>
+
+            <TextView
+                android:id="@+id/textView_item_receiptHistory_receivedAmount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/padding_l"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text=""
+                android:textColor="@color/colorGrayDashBoard"
+                android:textSize="@dimen/text_m" />
+
+            <!--<TextView
+                android:id="@+id/textView_item_cart_type"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:gravity="center|left"
+                android:padding="@dimen/padding_l"
+                android:text="@string/unit"
+                android:textColor="@color/colorGrayDashBoard"
+                android:textSize="@dimen/text_m" />-->
+
+            <TextView
+                android:id="@+id/textView_item_receiptHistory_balance"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text=""
+                android:textColor="@color/colorGrayDashBoard"
+                android:textSize="@dimen/text_m" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!--Delete Button-->
+                <ImageButton
+                    android:id="@+id/imageButton_item_receiptHistory_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorTransparent"
+                    android:src="@drawable/ic_sale_view_blue" />
+
+
+            </RelativeLayout>
+
+            <!--unit dropDown-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <!--Serial Number-->
+  <!--      <TextView
+            android:id="@+id/textView_item_receiptHistory_slNo"
+            style="@style/TextViewTableColStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />-->
+
+        <!--Invoice No-->
+       <!-- <TextView
+            android:id="@+id/textView_item_receiptHistory_receipt"
+            style="@style/TextViewTableColStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="start|center" />-->
+
+     <!--   &lt;!&ndash;date&ndash;&gt;
+        <TextView
+            android:id="@+id/textView_item_receiptHistory_date"
+            style="@style/TextViewTableColStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+        &lt;!&ndash;time&ndash;&gt;
+        <TextView
+            android:id="@+id/textView_item_receiptHistory_time"
+            style="@style/TextViewTableColStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />-->
+
+        <!--received amount-->
+        <!--<TextView
+            android:id="@+id/textView_item_receiptHistory_receivedAmount"
+            style="@style/TextViewTableColStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="end|center" />-->
+
+
+        <!--balance-->
+        <!--<TextView
+            android:id="@+id/textView_item_receiptHistory_balance"
+            style="@style/TextViewTableColStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="end|center" />-->
+
+        <!--action-->
+
+
+        <!--<RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            &lt;!&ndash;Delete Button&ndash;&gt;
+            <ImageButton
+                android:id="@+id/imageButton_item_receiptHistory_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:padding="@dimen/padding_l"
+                android:src="@drawable/ic_sale_view_blue" />
+
+
+        </RelativeLayout>-->
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
+

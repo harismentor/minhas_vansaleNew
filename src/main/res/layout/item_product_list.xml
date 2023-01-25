@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/layout_product_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite"
+        >
+
+        <TextView
+            android:id="@+id/textviewv_productname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1.5"
+            android:text=""
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:gravity="start|center"
+            android:textColor="@color/grayText"
+            android:textSize="12dp"
+            android:lines="3"/>
+        <TextView
+            android:id="@+id/edittext_qty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:minHeight="45dp"
+            android:background="@drawable/rectangle_blue_box"
+
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:paddingRight="3dp"
+            android:textColor="@color/grayText"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/edt_req_qty"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:gravity="center"
+            android:textColor="@color/grayText"
+            android:textSize="14dp"
+
+            android:lines="1"/>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

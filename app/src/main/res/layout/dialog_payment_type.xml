@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:padding="@dimen/padding_l">
+
+        <TextView
+            android:id="@+id/tv_paymentTypeDialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_xl"
+            android:text="PAYMENT TYPE"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="@dimen/padding_xl"
+            android:textSize="@dimen/text_l"/>
+
+
+        <TextView
+            android:id="@+id/textView_paymentTypeDialog_date"
+            android:layout_below="@+id/tv_paymentTypeDialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_l"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="@dimen/padding_xl"
+            android:textSize="@dimen/text_l"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="@dimen/padding_l"
+            android:layout_toLeftOf="@+id/textView_paymentTypeDialog_TotalAmount"/>
+
+
+        <TextView
+            android:id="@+id/textView_paymentTypeDialog_TotalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_paymentTypeDialog_title"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/padding_xl"
+            android:padding="@dimen/padding_l"
+            android:text="TOTAL"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_l" />
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_xxl"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView_paymentTypeDialog_customercreditLimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_l"
+            android:textColor="@color/grayText"
+            android:textSize="@dimen/text_l"
+            android:layout_margin="@dimen/padding_l"/>
+
+        <TextView
+            android:id="@+id/textView_paymentTypeDialog_creditLimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_l"
+            android:textColor="@color/grayText"
+            android:textSize="@dimen/text_l"
+            android:layout_margin="@dimen/padding_l"/>
+
+        <RadioGroup
+
+            android:id="@+id/radioGroup_paymentTypeDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/radioButton_paymentTypeDialog_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash"
+                android:checked="true"
+                android:textSize="@dimen/text_xl"
+                android:layout_marginEnd="@dimen/padding_xl"/>
+
+            <RadioButton
+                android:id="@+id/radioButton_paymentTypeDialog_credit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credit"
+                android:layout_marginStart="@dimen/padding_xl"
+                android:textSize="@dimen/text_xl"/>
+            <RadioButton
+                android:visibility="gone"
+                android:id="@+id/radioButton_paymentTypeDialog_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card"
+                android:layout_marginStart="@dimen/padding_xl"
+                android:textSize="@dimen/text_xl"/>
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+    <include layout="@layout/item_divider_horizontal_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:orientation="horizontal"
+        >
+
+        <com.rey.material.widget.Button
+            android:id="@+id/button_paymentTypeDialog_cancel"
+            style="@style/Material.Drawable.Ripple.Wave"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_toolbar_height"
+            android:background="@color/colorTransparent"
+            android:layout_margin="@dimen/layout_margin"
+            android:layout_gravity="center"
+            android:textColor="@color/grayText"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_l"
+            android:paddingLeft="@dimen/button_padding"
+            android:paddingRight="@dimen/button_padding"
+            android:text="CANCEL"
+            app:rd_enable="true"/>
+
+
+        <com.rey.material.widget.Button
+            android:id="@+id/button_paymentTypeDialog_ok"
+            style="@style/Material.Drawable.Ripple.Wave"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_toolbar_height"
+            android:background="@color/colorTransparent"
+            android:layout_margin="@dimen/layout_margin"
+            android:layout_gravity="center"
+            android:textColor="@color/grayText"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_l"
+            android:paddingLeft="@dimen/button_padding"
+            android:paddingRight="@dimen/button_padding"
+            android:text="OK"
+            app:rd_enable="true"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
